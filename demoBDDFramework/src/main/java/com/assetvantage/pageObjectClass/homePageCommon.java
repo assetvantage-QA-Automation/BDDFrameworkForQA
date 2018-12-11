@@ -38,7 +38,7 @@ public class homePageCommon extends browser {
 	WebElement menu_taxReports;
 	@FindBy(css = "a#documents")
 	WebElement menu_documents;
-	@FindBy(xpath = "//*[@id='main-container']/div[1]/div[1]/ul/li[2]") // removed   /a
+	@FindBy(xpath = "//*[@id='main-container']/div[1]/div[1]/ul/li[2]") // removed /a
 	WebElement entity;
 	@FindBy(xpath = "//*[@id='main-container']/div[1]/div[1]/ul/li[3]/a")
 	WebElement syncAccounts;
@@ -46,6 +46,8 @@ public class homePageCommon extends browser {
 	WebElement syncPostTransactions;
 	@FindBy(css = "input#positionid.ta_add_positionid")
 	WebElement invesmentSearch;
+
+	// ****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************
 
 	protected synchronized WebElement getAccounts() {
 		return accounts;
@@ -167,20 +169,27 @@ public class homePageCommon extends browser {
 		this.invesmentSearch = invesmentSearch;
 	}
 
-	public void clickOnEntity() {
+	// ********************************************************************************************************************************************************************************************************************************
+
+	public void clickOnEntityPresentOnHomepage() {
 		driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
 		getEntity().click();
 	}
-	
-	public void clickonMenubutton() {
+
+	private void clickonMenubutton() {
 		driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
 		getMenu().click();
 	}
-	
-	public void goToAnalytics() {
+
+	public void clickOnMenuThenClickOnAnalytics() {
 		clickonMenubutton();
 		getMenu_analytics().click();
 	}
-	
-	
+
+	public void clickOnMenuThenClickOnMaster() {
+		clickonMenubutton();
+		getMenu_masters().click();
+
+	}
+
 }

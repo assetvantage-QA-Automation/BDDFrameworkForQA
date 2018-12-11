@@ -11,18 +11,20 @@ import com.assetvantage.commonUtils.screenshotCapture;
 import com.assetvantage.commonUtils.textGenerator;
 import com.assetvantage.interfaces.InterfaceAsaService;
 
-public class accounts {
+public class accountsPage {
 
-	
 	InterfaceAsaService log = new Log();
 	InterfaceAsaService screenshot = new screenshotCapture();
-	public accounts(WebDriver driver) {
+
+	public accountsPage(WebDriver driver) {
 		browser.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 
 	@FindBy(css = "i.glyphicons.glyphicons-plus")
 	WebElement plusButton;
+	@FindBy(xpath = "//*[@id='go' and @tabindex]")
+	WebElement okButton;
 	@FindBy(css = "span#select2-txttype-container.select2-selection__rendered	")
 	WebElement accountType;
 	@FindBy(css = "span#select2-txtentity-container.select2-selection__rendered") // to select dropdown
@@ -37,6 +39,8 @@ public class accounts {
 	WebElement currency;
 	@FindBy(css = "span#select2-txtfor-container.select2-selection__rendered")
 	WebElement For;
+	@FindBy(xpath = "//*[@class='select2-results__option' and contains(@title,'Bank A')]")
+	WebElement ForDropdownlist;
 	@FindBy(css = "span#select2-txtshortcode-container.select2-selection__rendered")
 	WebElement shortCode;
 	@FindBy(xpath = "//*[@class='select2-results__option' and @title='CA']")
@@ -63,8 +67,20 @@ public class accounts {
 	@FindBy(css = "div#txtaddressacc.transaction-form-input.account_element")
 	WebElement address;
 
+	protected synchronized InterfaceAsaService getLog() {
+		return log;
+	}
+
+	protected synchronized InterfaceAsaService getScreenshot() {
+		return screenshot;
+	}
+
 	protected synchronized WebElement getPlusButton() {
 		return plusButton;
+	}
+
+	protected synchronized WebElement getOkButton() {
+		return okButton;
 	}
 
 	protected synchronized WebElement getAccountType() {
@@ -89,6 +105,10 @@ public class accounts {
 
 	protected synchronized WebElement getFor() {
 		return For;
+	}
+
+	protected synchronized WebElement getForDropdownlist() {
+		return ForDropdownlist;
 	}
 
 	protected synchronized WebElement getShortCode() {
@@ -139,8 +159,20 @@ public class accounts {
 		return address;
 	}
 
+	protected synchronized void setLog(InterfaceAsaService log) {
+		this.log = log;
+	}
+
+	protected synchronized void setScreenshot(InterfaceAsaService screenshot) {
+		this.screenshot = screenshot;
+	}
+
 	protected synchronized void setPlusButton(WebElement plusButton) {
 		this.plusButton = plusButton;
+	}
+
+	protected synchronized void setOkButton(WebElement okButton) {
+		this.okButton = okButton;
 	}
 
 	protected synchronized void setAccountType(WebElement accountType) {
@@ -165,6 +197,10 @@ public class accounts {
 
 	protected synchronized void setFor(WebElement for1) {
 		For = for1;
+	}
+
+	protected synchronized void setForDropdownlist(WebElement forDropdownlist) {
+		ForDropdownlist = forDropdownlist;
 	}
 
 	protected synchronized void setShortCode(WebElement shortCode) {
@@ -224,6 +260,8 @@ public class accounts {
 		getAccountName().sendKeys(textGenerator.getText());
 		getAccountNumber().sendKeys(textGenerator.getText());
 		System.out.println(getCurrency().getText());
+		getFor().click();
+		getForDropdownlist().click();
 		getShortCode().click();
 		getShortCodeDropdownList().click();
 		getDefault_Payee_Payor_Bank_Account().click();
@@ -231,5 +269,9 @@ public class accounts {
 		getSaveButton111().click();
 		log.info("Account creation completed");
 
+	}
+
+	public void viewCreatedAccount() {
+		getOkButton().click();
 	}
 }// End of class
