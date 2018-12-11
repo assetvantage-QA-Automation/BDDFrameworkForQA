@@ -1,0 +1,77 @@
+[
+	{
+		"Company": "Airbnb",
+		"Headquarters": "San Francisco, CA",
+		"Industry": "Hospitality service"
+	},
+	{
+		"Company": "Alibaba",
+		"Headquarters": "Hangzhou, Zhejiang",
+		"Industry": "Ecommerce"
+	},
+	{
+		"Company": "Amazon",
+		"Headquarters": "Seattle, WA",
+		"Industry": "Conglomerate"
+	},
+	{
+		"Company": "Apple",
+		"Headquarters": "Cupertino, CA",
+		"Industry": "Technology"
+	},
+	{
+		"Company": "Dell",
+		"Headquarters": "Round Rock, TX",
+		"Industry": "Consumer Electronics"
+	},
+	{
+		"Company": "Facebook",
+		"Headquarters": "Menlo Park, CA",
+		"Industry": "Social Media"
+	},
+	{
+		"Company": "Founders Fund",
+		"Headquarters": "San Francisco, CA",
+		"Industry": "Venture Capital"
+	},
+	{
+		"Company": "Google",
+		"Headquarters": "Mountain View, CA",
+		"Industry": "Technology"
+	},
+	{
+		"Company": "Microsoft",
+		"Headquarters": "Redmond, WA",
+		"Industry": "Technology"
+	},
+	{
+		"Company": "Netflix",
+		"Headquarters": "Los Gatos, CA",
+		"Industry": "Digital Entertainment"
+	},
+	{
+		"Company": "Salesforce",
+		"Headquarters": "San Francisco, CA",
+		"Industry": "SaaS"
+	},
+	{
+		"Company": "SAS",
+		"Headquarters": "Cary, NC",
+		"Industry": "Analytics Software"
+	},
+	{
+		"Company": "SpaceX",
+		"Headquarters": "Hawthorne, CA",
+		"Industry": "Aerospace"
+	},
+	{
+		"Company": "Twitter",
+		"Headquarters": "San Francisco, CA",
+		"Industry": "Social Media"
+	},
+	{
+		"Company": "Virgin Group",
+		"Headquarters": "London, England",
+		"Industry": "Conglomerate"
+	}
+]
