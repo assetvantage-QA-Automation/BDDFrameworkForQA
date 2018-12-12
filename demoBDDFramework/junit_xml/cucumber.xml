@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="0">
-<testcase classname="Verify the details with JSON which are displayed on wealth register page." name="Verify that user successfully verify the wealth register report with given JSON data" time="0">
-<system-out><![CDATA[Given user logs into portal with "ravi.prakash" and "user@123"..............skipped
-When user clicks on menu - analytics and clicks on wealth register..........skipped
-Then wealth register page is displayed......................................skipped
-Then user search the details by entering correct entity and date and clicked on process.skipped
-Then All Denominated Assets are displayed on page...........................skipped
-Then user verify the details with given JSON................................skipped
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="34.778716">
+<testcase classname="Verify the details with JSON which are displayed on wealth register page." name="Verify that user successfully verify the balanceSheet report with given JSON data" time="34.778716">
+<system-out><![CDATA[Given user is logged into portal with "ravi.prakash" and "user@123".........passed
+When user Clicks on menu - General Ledger and clicks on Balance Sheet.......passed
+Then Balance Sheet page is displayed........................................passed
+Then user Search the details by entering correct entity and date and clicked on process.passed
+Then All  Equities and Liabilities are displayed on page....................passed
+Then User verify the details with given JSON................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

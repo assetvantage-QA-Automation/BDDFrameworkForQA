@@ -191,5 +191,9 @@ public class homePageCommon extends browser {
 		getMenu_masters().click();
 
 	}
+	public void clickOnMenuThenClickOnGeneralLedger() {
+		clickonMenubutton();
+		getMenu_generalLedger().click();
+	}
 
 }
