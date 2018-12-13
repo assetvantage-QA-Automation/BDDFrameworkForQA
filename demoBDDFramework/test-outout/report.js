@@ -125,42 +125,42 @@ formatter.match({
   "location": "balanceSheetVerification_Assetvantage.loginToPortal(String,String)"
 });
 formatter.result({
-  "duration": 19796215809,
+  "duration": 13703992805,
   "status": "passed"
 });
 formatter.match({
   "location": "balanceSheetVerification_Assetvantage.navigateToWealthRegister()"
 });
 formatter.result({
-  "duration": 205288474,
+  "duration": 235041094,
   "status": "passed"
 });
 formatter.match({
   "location": "balanceSheetVerification_Assetvantage.verifyWealthRegisterPage()"
 });
 formatter.result({
-  "duration": 9435369,
+  "duration": 6478155,
   "status": "passed"
 });
 formatter.match({
   "location": "balanceSheetVerification_Assetvantage.searchForReport()"
 });
 formatter.result({
-  "duration": 11095261774,
+  "duration": 11205602621,
   "status": "passed"
 });
 formatter.match({
   "location": "balanceSheetVerification_Assetvantage.detailedReportIsDisplayed()"
 });
 formatter.result({
-  "duration": 3672493873,
+  "duration": 4718345033,
   "status": "passed"
 });
 formatter.match({
   "location": "balanceSheetVerification_Assetvantage.verifyReportWithJSON()"
 });
 formatter.result({
-  "duration": 20767,
+  "duration": 22655,
   "status": "passed"
 });
 });

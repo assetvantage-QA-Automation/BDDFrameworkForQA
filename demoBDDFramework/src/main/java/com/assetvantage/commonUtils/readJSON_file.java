@@ -2,41 +2,76 @@ package com.assetvantage.commonUtils;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
-
+import java.io.IOException;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
-
+import org.json.simple.parser.ParseException;
 
 public class readJSON_file {
 
-	public void readJSON(String pathName) {
+	public void readJson(String file, int counter, String actualProductName, double actualValuation,
+			double actualCostBasis, double actualDifference) {
 		JSONParser parser = new JSONParser();
+
 		try {
-			Object object = parser.parse(new FileReader(pathName));
+			JSONArray a = (JSONArray) parser.parse(new FileReader(file));
+			int count = 0;
+			/* for (Object o : a) */
+			for (Object o : a) {
+				if (count == counter) {
+					JSONObject trigger = (JSONObject) o;
 
-			// convert Object to JSONObject
-			JSONObject jsonObject = (JSONObject) object;
+					String ProductName = (String) trigger.get("ProductName");
+					System.out.println("ProductName Name : " + ProductName);
+					if (ProductName.equalsIgnoreCase(actualProductName)) {
+						System.out.println("ProductName is same");
+					}
 
-			// Reading the String
-			String name = (String) jsonObject.get("Name");
-			Long age = (Long) jsonObject.get("Age");
+					String Valuation = (String) trigger.get("Valuation");
+					double valuationF = Double.parseDouble(Valuation.replace(",", ""));
+					System.out.println("Valuation is : " + valuationF);
+					if (valuationF == actualValuation) {
+						System.out.println("Valuation is same");
+					} else {
+						System.out.println("Valuation is deviated from expected " + (valuationF - actualValuation));
+					}
 
-			// Reading the array
-			JSONArray countries = (JSONArray) jsonObject.get("Countries");
+					String Cost_Basis = (String) trigger.get("Cost Basis");
+					double Cost_BasisF = Double.parseDouble(Cost_Basis.replace(",", ""));
+					System.out.println("Cost_Basis is : " + Cost_BasisF);
+					if (Cost_BasisF == actualCostBasis) {
+						System.out.println("Valuation is same");
+					} else {
+						System.out.println("Valuation is deviated from expected " + (actualCostBasis - Cost_BasisF));
+					}
 
-			// Printing all the values
-			System.out.println("Name: " + name);
-			System.out.println("Age: " + age);
-			System.out.println("Countries:");
-			for (Object country : countries) {
-				System.out.println("\t" + country.toString());
+					String Difference = (String) trigger.get("Difference");
+					double DifferenceF = Double.parseDouble(Difference.replace(",", ""));
+					System.out.println("Difference Role : " + DifferenceF);
+					if (DifferenceF == actualDifference) {
+						System.out.println("Valuation is same");
+					} else {
+						System.out.println("Valuation is deviated from expected " + (actualDifference - DifferenceF));
+					}
+
+					System.out.println("\n");
+				}
+				count++;
+
 			}
-		} catch (FileNotFoundException fe) {
-			fe.printStackTrace();
-		} catch (Exception e) {
+
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
 	}
+
 }
