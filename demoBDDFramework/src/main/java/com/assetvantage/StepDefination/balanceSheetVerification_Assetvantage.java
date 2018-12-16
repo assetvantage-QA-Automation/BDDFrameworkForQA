@@ -12,10 +12,10 @@ import com.assetvantage.baseClass.browser;
 import com.assetvantage.commonUtils.Log;
 import com.assetvantage.commonUtils.screenshotCapture;
 import com.assetvantage.interfaces.InterfaceAsaService;
-import com.assetvantage.pageObjectClass.analytics;
+import com.assetvantage.pageObjectClass.balanceSheetPage;
+import com.assetvantage.pageObjectClass.generalLedger;
 import com.assetvantage.pageObjectClass.homePageCommon;
 import com.assetvantage.pageObjectClass.logInPage;
-import com.assetvantage.pageObjectClass.wealthRegisterPage;
 import com.cucumber.listener.Reporter;
 
 import cucumber.api.Scenario;
@@ -24,12 +24,12 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-public class wealthRegisterVerification_Assetvantage extends browser {
+public class balanceSheetVerification_Assetvantage extends browser {
 
 	InterfaceAsaService log = new Log();
 	InterfaceAsaService ss = new screenshotCapture();
 
-	@Given("^user logs into portal with \"(.*)\" and \"(.*)\"$") // \"(.*)\"
+	@Given("^user is logged into portal with \"(.*)\" and \"(.*)\"$") //
 	public void loginToPortal(String username, String password) throws Exception {
 		browser br = new browser();
 		br.openBrowserandNavigate();
@@ -41,39 +41,43 @@ public class wealthRegisterVerification_Assetvantage extends browser {
 		ss.takeScreenShotofCurrentpage();
 	}
 
-	@When("^user clicks on menu - analytics and clicks on wealth register$")
+	@When("^user Clicks on menu - General Ledger and clicks on Balance Sheet$")
 	public void navigateToWealthRegister() {
 		homePageCommon hpc = new homePageCommon(driver);
-		hpc.clickOnMenuThenClickOnAnalytics();
+		hpc.clickOnMenuThenClickOnGeneralLedger();
 	}
 
-	@Then("^wealth register page is displayed$")
+	@Then("^Balance Sheet page is displayed$")
 	public void verifyWealthRegisterPage() {
 		log.info("Page name is: " + driver.getTitle());
 	}
 
-	@Then("^user search the details by entering correct entity and date and clicked on process$")
-	public void searchForReport() throws IOException {
-		analytics a = new analytics(driver);
-		a.clickOnWealthRegisterLink();
-		wealthRegisterPage wrp = new wealthRegisterPage(driver);
-		wrp.fetchReport();
-		ss.takeScreenShotofCurrentpage();
-	}
-
-	@Then("^All Denominated Assets are displayed on page$")
-	public void detailedReportIsDisplayed() throws IOException, InterruptedException {
-		wealthRegisterPage wrp = new wealthRegisterPage(driver);
-		Thread.sleep(5000);
-		wrp.expandTheReport();
+	@Then("^user Search the details by entering correct entity and date and clicked on process$")
+	public void searchForReport() {
+		generalLedger gl = new generalLedger(driver);
+		gl.clickOnBalanceSheet();
+		balanceSheetPage bs = new balanceSheetPage(driver);
+		bs.fetchReport();
+		try {
+			Thread.sleep(10000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 	}
 
-	@Then("^user verify the details with given JSON$")
-	public void verifyReportWithJSON() {
-		wealthRegisterPage wrp = new wealthRegisterPage(driver);
-		wrp.getDetailsOfWealthRegister();
+	@Then("^All  Equities and Liabilities are displayed on page$")
+	public void detailedReportIsDisplayed() {
+		balanceSheetPage bs = new balanceSheetPage(driver);
+		bs.expandTheReport();
 
+	}
+
+	@Then("^User verify the details with given JSON \"(.*)\"$")
+	public void verifyReportWithJSON(String filePath) {
+		balanceSheetPage bs = new balanceSheetPage(driver);
+		bs.verifyBalanceSheetValues(filePath);
 	}
 
 	@After
@@ -99,5 +103,4 @@ public class wealthRegisterVerification_Assetvantage extends browser {
 		}
 
 	}
-
 }

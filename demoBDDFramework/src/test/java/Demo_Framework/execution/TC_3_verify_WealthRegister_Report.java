@@ -69,7 +69,7 @@ public class TC_3_verify_WealthRegister_Report extends browser {
     	Reporter.loadXMLConfig(new File("C:\\Users\\partha.das\\git\\BDDFrameworkForQA\\demoBDDFramework\\src\\main\\java\\com\\assetvantage\\configFiles\\extent-config.xml"));
     	Reporter.addScenarioLog("User Name ------------> "+ System.getProperty("user.name"));
 	    Reporter.addScenarioLog("Time Zone ------------> "+ System.getProperty("user.timezone"));
-	    Reporter.addScenarioLog("Machine -------------->"+ 	System.getenv("PROCESSOR_IDENTIFIER")+"\n"+System.getenv("PROCESSOR_ARCHITECTURE")+"\n"+System.getenv("PROCESSOR_ARCHITEW6432")+"\n"+System.getenv("NUMBER_OF_PROCESSORS"));
+	    Reporter.addScenarioLog("Machine -------------->"+ 	System.getenv("PROCESSOR_IDENTIFIER")+"\n"+System.getenv("PROCESSOR_ARCHITECTURE")+"\n"+System.getenv("PROCESSOR_ARCHITEW6432")+"\n"+ "Number of Processors"+System.getenv("NUMBER_OF_PROCESSORS"));
 	    Reporter.addScenarioLog("Selenium ------------->"+ " 3.7.0");
 	    Reporter.addScenarioLog("IP Address ----------------> "+ InetAddress. getLocalHost());
 	    Reporter.addScenarioLog("Java Version ---------> "+ System.getProperty("java.version"));

@@ -1,7 +1,12 @@
 package com.assetvantage.StepDefination;
 
+import java.io.File;
 import java.io.IOException;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriverException;
 import org.testng.Assert;
 
 import com.assetvantage.baseClass.browser;
@@ -9,7 +14,10 @@ import com.assetvantage.commonUtils.Log;
 import com.assetvantage.commonUtils.screenshotCapture;
 import com.assetvantage.interfaces.InterfaceAsaService;
 import com.assetvantage.pageObjectClass.logInPage;
+import com.cucumber.listener.Reporter;
 
+import cucumber.api.Scenario;
+import cucumber.api.java.After;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -44,7 +52,28 @@ public class loginTo_AssetVantage extends browser{
 		log.info(driver.getTitle());
 		Assert.assertTrue(driver.getTitle().equalsIgnoreCase("Asset Vantage: Expected Data Automation (staging)"), "test success");
 	}
-
+	@After
+	public void ifTestFails(Scenario scenario) {
+		if (scenario.isFailed()) {
+			String screenshotName = scenario.getName().replaceAll(" ", "_");
+			try {
+				TakesScreenshot ts = (TakesScreenshot) driver;
+				File sourcePath = ts.getScreenshotAs(OutputType.FILE);
+				File destinationPath = new File(
+						"C:\\Users\\partha.das\\git\\BDDFrameworkForQA\\demoBDDFramework\\target\\cucumber-reports\\screenshots\\" + screenshotName + ".png");
+				FileUtils.copyFile(sourcePath, destinationPath);
+				Reporter.addScreenCaptureFromPath(destinationPath.toString());
+			} catch (WebDriverException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+	    }
+		 
+	}
 
 
 

@@ -9,7 +9,7 @@ import com.assetvantage.interfaces.InterfaceAsaService;
 public class browser extends browserConfig {
 	public static Properties prop;
 
-	InterfaceAsaService log = new Log();
+	static InterfaceAsaService log = new Log();
 
 	public browser() {
 
@@ -33,7 +33,7 @@ public class browser extends browserConfig {
 		}
 	}
 
-	public void teardown() {
+	public static void teardown() {
 		if (driver != null) {
 			driver.quit();
 			log.info("Browser Closed");

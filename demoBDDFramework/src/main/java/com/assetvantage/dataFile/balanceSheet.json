@@ -1,0 +1,200 @@
+[
+	{
+		"ProductName": "ASSETS",
+		"Valuation": "23,21,879.0836",
+		"Cost Basis": "2,69,061.4779",
+		"Difference": "20,52,817.6057"
+	},
+	{
+		"ProductName": "Non-Current Assets",
+		"Valuation": "1,49,14,325.3682",
+		"Cost Basis": "1,28,61,507.7625",
+		"Difference": "20,52,817.6057"
+	},
+	{
+		"ProductName": "Mutual Funds",
+		"Valuation": "1,31,378.9272",
+		"Cost Basis": "1,33,343.7246",
+		"Difference": "-1,964.7975"
+	},
+	{
+		"ProductName": "BNP Paribas Liquid Fund(DD) - Mutual Fund  Axis Asset Management Company Ltd. - 3464364 - INR - Custodian",
+		"Valuation": "1,00,049.0000",
+		"Cost Basis": "1,03,840.0000",
+		"Difference": "-3,791.0000"
+	},
+	{
+		"ProductName": "Tata Dividend Yield Fund(D) - Mutual Fund  Axis Asset Management Company Ltd. - 3464364 - INR - Custodian",
+		"Valuation": "31,329.9272",
+		"Cost Basis": "29,503.7246",
+		"Difference": "1,826.2025"
+	},
+	{
+		"ProductName": "Bonds",
+		"Valuation": "28,62,972.6026",
+		"Cost Basis": "2,69,230.0000",
+		"Difference": "25,93,742.6026"
+	},
+	{
+		"ProductName": "ADVINUS THERAPEUTICS LIMITED 5 LOA 10AP15 FVRS10LAC - Mutual Fund  Axis Asset Management Company Ltd. - 3464364 - INR - Custodian",
+		"Valuation": "10,33,972.6026",
+		"Cost Basis": " 100.0000",
+		"Difference": "10,33,872.6026"
+	},
+	{
+		"ProductName": "Dr Reddys Laboratories - Mutual Fund  Axis Asset Management Company Ltd. - 3464364 - INR - Custodian",
+		"Valuation": " 0.0000",
+		"Cost Basis": " 100.0000",
+		"Difference": " -100.0000"
+	},
+	{
+		"ProductName": "wqqqc - Mutual Fund  Axis Asset Management Company Ltd. - 3464364 - INR - Custodian",
+		"Valuation": "18,29,000.0000",
+		"Cost Basis": "2,69,030.0000",
+		"Difference": "15,59,970.0000"
+	},
+	{
+		"ProductName": "Stocks",
+		"Valuation": "1,19,18,743.8384",
+		"Cost Basis": "1,24,57,704.0379",
+		"Difference": "-5,38,960.1995"
+	},
+	{
+		"ProductName": "ABB India Ltd. - Mutual Fund  Axis Asset Management Company Ltd. - 3464364 - INR - Custodian",
+		"Valuation": "3,11,754.6000",
+		"Cost Basis": "1,66,078.0075",
+		"Difference": "1,45,676.5925"
+	},
+	{
+		"ProductName": "Diebold Inc. - Custodian  ELECTRA ACCOUNT_23Aug - 87980909 - CA - USD - Custodian",
+		"Valuation": "4,34,880.0000",
+		"Cost Basis": "9,45,508.6640",
+		"Difference": "-5,10,628.6640"
+	},
+	{
+		"ProductName": "GCP Applied Technologies Inc. - Custodian  ELECTRA ACCOUNT_23Aug - 87980909 - CA - USD - Custodian",
+		"Valuation": "79,53,634.8384",
+		"Cost Basis": "77,90,697.8812",
+		"Difference": "1,62,936.9572"
+	},
+	{
+		"ProductName": "KLX Inc.  - Custodian  ELECTRA ACCOUNT_23Aug - 87980909 - CA - USD - Custodian",
+		"Valuation": "22,82,757.6000",
+		"Cost Basis": "24,95,965.2485",
+		"Difference": "-2,13,207.6485"
+	},
+	{
+		"ProductName": "MGM Resorts International - Custodian  ELECTRA ACCOUNT_23Aug - 87980909 - CA - USD - Custodian",
+		"Valuation": "9,35,716.8000",
+		"Cost Basis": "10,59,454.2367",
+		"Difference": "-1,23,737.4367"
+	},
+	{
+		"ProductName": "Personal Assets",
+		"Valuation": "1,230.0000",
+		"Cost Basis": "1,230.0000",
+		"Difference": " 0.0000"
+	},
+	{
+		"ProductName": "Boat - Mutual Fund  Axis Asset Management Company Ltd. - 3464364 - INR - Custodian",
+		"Valuation": "1,230.0000",
+		"Cost Basis": "1,230.0000",
+		"Difference": " 0.0000"
+	},
+	{
+		"ProductName": "Current Assets",
+		"Valuation": "-1,21,18,046.2846",
+		"Cost Basis": "-1,21,18,046.2846",
+		"Difference": "0"
+	},
+	{
+		"ProductName": "Bank Account",
+		"Valuation": "8,20,450.0000",
+		"Cost Basis": "8,20,450.0000",
+		"Difference": " 0.0000"
+	},
+	{
+		"ProductName": "Titan Bank - Bank  21308082 - BA - INR - Bank",
+		"Valuation": "8,20,450.0000",
+		"Cost Basis": "8,20,450.0000",
+		"Difference": " 0.0000"
+	},
+	{
+		"ProductName": "Payor",
+		"Valuation": "-1,29,38,496.2846",
+		"Cost Basis": "-1,29,38,496.2846",
+		"Difference": " 0.0000"
+	},
+	{
+		"ProductName": "Axis Asset Management Company Ltd. - Payor   3464364 - Payor - INR - Payor",
+		"Valuation": "-5,53,178.8875",
+		"Cost Basis": "-5,53,178.8875",
+		"Difference": " 0.0000"
+	},
+	{
+		"ProductName": "HSBC Account - payor  123 - Payor - USD - Payor",
+		"Valuation": "-1,23,85,317.3971",
+		"Cost Basis": "-1,23,85,317.3971",
+		"Difference": " 0.0000"
+	},
+	{
+		"ProductName": "Unclassified Assets",
+		"Valuation": "-4,74,400.0000",
+		"Cost Basis": "-4,74,400.0000",
+		"Difference": "0"
+	},
+	{
+		"ProductName": "Unclassified Asset",
+		"Valuation": "-4,74,400.0000",
+		"Cost Basis": "-4,74,400.0000",
+		"Difference": " 0.0000"
+	},
+	{
+		"ProductName": "My Ledger - Ledger  AV78LEDGWXAWCWINR - LA - INR - Ledger",
+		"Valuation": "-4,74,400.0000",
+		"Cost Basis": "-4,74,400.0000",
+		"Difference": " 0.0000"
+	},
+	{
+		"ProductName": "EQUITY",
+		"Valuation": "23,21,229.0836",
+		"Cost Basis": "2,68,411.4779",
+		"Difference": "20,52,817.6057"
+	},
+	{
+		"ProductName": "Equity",
+		"Valuation": "23,21,229.0836",
+		"Cost Basis": "2,68,411.4779",
+		"Difference": "20,52,817.6057"
+	},
+	{
+		"ProductName": "UnRealized Gains/Losses",
+		"Valuation": "20,52,817.6057",
+		"Cost Basis": " 0.0000",
+		"Difference": "20,52,817.6057"
+	},
+	{
+		"ProductName": "UnRealized Gains/Losses - UnRealized Gains/Losses  AV78LEAC4005698 - URGL - INR - Ledger",
+		"Valuation": "20,52,817.6057",
+		"Cost Basis": " 0.0000",
+		"Difference": "20,52,817.6057"
+	},
+	{
+		"ProductName": "Net Income",
+		"Valuation": "2,68,411.4779",
+		"Cost Basis": "2,68,411.4779",
+		"Difference": " 0.0000"
+	},
+	{
+		"ProductName": "Net Income - Net Income  AV78LEAC9035998 - NI - INR - Ledger",
+		"Valuation": "2,68,411.4779",
+		"Cost Basis": "2,68,411.4779",
+		"Difference": " 0.0000"
+	},
+	{
+		"ProductName": "TOTAL EQUITY + LIABILITIES",
+		"Valuation": "23,21,229.0836",
+		"Cost Basis": "2,68,411.4779",
+		"Difference": "20,52,817.6057"
+	}
+]
