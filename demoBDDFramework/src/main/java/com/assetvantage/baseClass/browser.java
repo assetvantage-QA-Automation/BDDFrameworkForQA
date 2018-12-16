@@ -18,7 +18,8 @@ public class browser extends browserConfig {
 	public void openBrowserandNavigate() throws Exception {
 		try {
 
-			browserConfig.startBrowser(browserConfig.getBrowserName());
+			log.info("Browsers are configurable, for checking purposes Selection is skipped. //browserConfig.getBrowserName()");
+			browserConfig.startBrowser("chrome");
 			driver.get(getProperty.readmyFile("url"));
 
 			log.info("URL is Presented");

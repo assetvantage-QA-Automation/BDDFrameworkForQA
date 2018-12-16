@@ -19,8 +19,10 @@ class A{
 public class AppTest {
 	
 	public static void main(String[] args) {
-		A a =new A();
-		a.t2();
-		a.t2();
+//		A a =new A();
+//		a.t2();
+//		a.t2();
+	System.out.println(System.getProperty("user.dir"));
 	}
 }
+

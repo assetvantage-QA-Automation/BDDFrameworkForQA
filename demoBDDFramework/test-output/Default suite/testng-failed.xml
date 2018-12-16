@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Demo_Framework.execution.TC_4_verify_balanceSheet_report">
+      <class name="Demo_Framework.execution.TC_3_verify_WealthRegister_Report">
         <methods>
-          <include name="feature" invocation-numbers="0"/>
           <include name="tearDownClass"/>
+          <include name="feature" invocation-numbers="0"/>
           <include name="setUpClass"/>
         </methods>
-      </class> <!-- Demo_Framework.execution.TC_4_verify_balanceSheet_report -->
+      </class> <!-- Demo_Framework.execution.TC_3_verify_WealthRegister_Report -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

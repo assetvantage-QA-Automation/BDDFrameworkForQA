@@ -6,8 +6,6 @@ import java.io.IOException;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-import org.testng.ITestResult;
-
 import com.assetvantage.baseClass.browser;
 import com.assetvantage.interfaces.screenShotInterface;
 
@@ -17,12 +15,12 @@ public class screenshotCapture extends browser implements screenShotInterface {
 		// final File src=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		try {
 			File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-			FileUtils.copyFile(src,
-					new File("D:\\EclipseWorkspace\\demoDDTFramework\\screenShots\\" + System.currentTimeMillis() + ".png"));
+			FileUtils.copyFile(src, new File(
+					"C:\\Users\\partha.das\\git\\BDDFrameworkForQA\\demoBDDFramework\\screenShots\\" + System.currentTimeMillis() + ".png"));
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-			
+
 		}
 		System.out.println("ScreenShot is Captured");
 
@@ -59,36 +57,6 @@ public class screenshotCapture extends browser implements screenShotInterface {
 	}
 
 	public void debug(String message) {
-		// TODO Auto-generated method stub
-
-	}
-
-	public void onTestStart(ITestResult result) {
-		// TODO Auto-generated method stub
-
-	}
-
-	public void onTestSuccess(ITestResult result) {
-		// TODO Auto-generated method stub
-
-	}
-
-	public void onTestFailure(ITestResult result) {
-		// TODO Auto-generated method stub
-
-	}
-
-	public void onTestSkipped(ITestResult result) {
-		// TODO Auto-generated method stub
-
-	}
-
-	public void onStart(ITestResult result) {
-		// TODO Auto-generated method stub
-
-	}
-
-	public void onFinish(ITestResult result) {
 		// TODO Auto-generated method stub
 
 	}

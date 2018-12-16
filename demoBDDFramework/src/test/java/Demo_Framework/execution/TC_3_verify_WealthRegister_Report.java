@@ -1,18 +1,30 @@
 package Demo_Framework.execution;
 
 import java.io.File;
+import java.io.IOException;
+import java.net.InetAddress;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.log4j.BasicConfigurator;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriverException;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import com.assetvantage.baseClass.browser;
+import com.assetvantage.commonUtils.Log;
+import com.assetvantage.interfaces.InterfaceAsaService;
 import com.cucumber.listener.Reporter;
 
 import cucumber.api.CucumberOptions;
+import cucumber.api.Scenario;
+import cucumber.api.java.After;
 import cucumber.api.testng.CucumberFeatureWrapper;
 import cucumber.api.testng.TestNGCucumberRunner;
+import gherkin.formatter.model.ScenarioOutline;
 
 @CucumberOptions(
 		features = "C:\\Users\\partha.das\\git\\BDDFrameworkForQA\\demoBDDFramework\\src\\main\\java\\com\\assetvantage\\featureFile\\wealthRegisterVerification.feature", //the path of the feature files
@@ -24,12 +36,16 @@ import cucumber.api.testng.TestNGCucumberRunner;
 		//tags = {"~@SmokeTest" , "~@RegressionTest", "~@End2End"}			
 		)
 
-public class TC_3_verify_WealthRegister_Report {
-private TestNGCucumberRunner testNGCucumberRunner;
-	 
+public class TC_3_verify_WealthRegister_Report extends browser {
+    
+	TestNGCucumberRunner testNGCucumberRunner;
+    InterfaceAsaService log=new Log();
+    
+    
     @BeforeClass(alwaysRun = true)
     public void setUpClass() throws Exception {
     	BasicConfigurator.configure();
+    	log.startTestCase(getClass().getName());
         testNGCucumberRunner = new TestNGCucumberRunner(this.getClass());
     }
  
@@ -37,23 +53,28 @@ private TestNGCucumberRunner testNGCucumberRunner;
 	public void feature(CucumberFeatureWrapper cucumberFeature) {
 
 		testNGCucumberRunner.runCucumber(cucumberFeature.getCucumberFeature());
+		
 	}
+	
  
     @DataProvider
     public Object[][] features() {
         return testNGCucumberRunner.provideFeatures();
     }
+    
     @AfterClass(alwaysRun = true)
     public void tearDownClass() throws Exception {
-    	testNGCucumberRunner.finish();
-    	Reporter.loadXMLConfig(new File("D:\\EclipseWorkspace\\demoBDDFramework\\src\\main\\java\\com\\assetvantage\\configFiles\\extent-config.xml"));
-		Reporter.setSystemInfo("User Name", System.getProperty("user.name"));
-	    Reporter.setSystemInfo("Time Zone", System.getProperty("user.timezone"));
-	    Reporter.setSystemInfo("Machine", 	"Windows 10" + "64 Bit");
-	    Reporter.setSystemInfo("Selenium", "3.7.0");
-	    Reporter.setSystemInfo("Maven", "3.5.2");
-	    Reporter.setSystemInfo("Java Version", "1.8.0_151");
+    	log.endTestCase(getClass().getName());
     	
+    	Reporter.loadXMLConfig(new File("C:\\Users\\partha.das\\git\\BDDFrameworkForQA\\demoBDDFramework\\src\\main\\java\\com\\assetvantage\\configFiles\\extent-config.xml"));
+    	Reporter.addScenarioLog("User Name ------------> "+ System.getProperty("user.name"));
+	    Reporter.addScenarioLog("Time Zone ------------> "+ System.getProperty("user.timezone"));
+	    Reporter.addScenarioLog("Machine -------------->"+ 	System.getenv("PROCESSOR_IDENTIFIER")+"\n"+System.getenv("PROCESSOR_ARCHITECTURE")+"\n"+System.getenv("PROCESSOR_ARCHITEW6432")+"\n"+System.getenv("NUMBER_OF_PROCESSORS"));
+	    Reporter.addScenarioLog("Selenium ------------->"+ " 3.7.0");
+	    Reporter.addScenarioLog("IP Address ----------------> "+ InetAddress. getLocalHost());
+	    Reporter.addScenarioLog("Java Version ---------> "+ System.getProperty("java.version"));
+	    testNGCucumberRunner.finish();
+	    //driver.quit();
     }
 }
 

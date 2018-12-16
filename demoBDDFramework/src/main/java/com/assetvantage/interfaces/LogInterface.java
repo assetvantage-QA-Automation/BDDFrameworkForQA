@@ -1,6 +1,6 @@
 package com.assetvantage.interfaces;
 
-public interface LogInterface {
+public interface LogInterface extends InterfaceAsaService {
 
 	void startTestCase(String sTestCaseName);
 

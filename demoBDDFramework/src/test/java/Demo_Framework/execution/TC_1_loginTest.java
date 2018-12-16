@@ -8,6 +8,9 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import com.assetvantage.baseClass.browser;
+import com.assetvantage.commonUtils.Log;
+import com.assetvantage.interfaces.InterfaceAsaService;
 import com.cucumber.listener.Reporter;
 
 import cucumber.api.CucumberOptions;
@@ -24,35 +27,45 @@ import cucumber.api.testng.TestNGCucumberRunner;
 		//tags = {"~@SmokeTest" , "~@RegressionTest", "~@End2End"}			
 		)
 
-public class TC_1_loginTest {
+public class TC_1_loginTest extends browser {
 	private TestNGCucumberRunner testNGCucumberRunner;
-	 
-    @BeforeClass(alwaysRun = true)
-    public void setUpClass() throws Exception {
-    	BasicConfigurator.configure();
-        testNGCucumberRunner = new TestNGCucumberRunner(this.getClass());
-    }
- 
-    @Test(groups = "cucumber", description = "Runs Cucumber Feature", dataProvider = "features")
-    public void feature(CucumberFeatureWrapper cucumberFeature) {
-    	
-        testNGCucumberRunner.runCucumber(cucumberFeature.getCucumberFeature());
-    }
- 
-    @DataProvider
-    public Object[][] features() {
-        return testNGCucumberRunner.provideFeatures();
-    }
-    @AfterClass(alwaysRun = true)
-    public void tearDownClass() throws Exception {
-    	testNGCucumberRunner.finish();
-    	Reporter.loadXMLConfig(new File("D:\\EclipseWorkspace\\demoBDDFramework\\src\\main\\java\\com\\assetvantage\\configFiles\\extent-config.xml"));
-		Reporter.setSystemInfo("User Name", System.getProperty("user.name"));
-	    Reporter.setSystemInfo("Time Zone", System.getProperty("user.timezone"));
-	    Reporter.setSystemInfo("Machine", 	"Windows 10" + "64 Bit");
-	    Reporter.setSystemInfo("Selenium", "3.7.0");
-	    Reporter.setSystemInfo("Maven", "3.5.2");
-	    Reporter.setSystemInfo("Java Version", "1.8.0_151");
-    	
-    }
+
+	InterfaceAsaService log = new Log();
+
+	@BeforeClass(alwaysRun = true)
+	public void setUpClass() throws Exception {
+		BasicConfigurator.configure();
+		log.startTestCase(getClass().getName());
+		testNGCucumberRunner = new TestNGCucumberRunner(this.getClass());
+	}
+
+	@Test(groups = "cucumber", description = "Runs Cucumber Feature", dataProvider = "features")
+	public void feature(CucumberFeatureWrapper cucumberFeature) {
+
+		testNGCucumberRunner.runCucumber(cucumberFeature.getCucumberFeature());
+	}
+
+	@DataProvider
+	public Object[][] features() {
+		return testNGCucumberRunner.provideFeatures();
+	}
+
+	@AfterClass(alwaysRun = true)
+	public void tearDownClass() throws Exception {
+		log.endTestCase(getClass().getName());
+
+		Reporter.loadXMLConfig(new File(
+				"C:\\Users\\partha.das\\git\\BDDFrameworkForQA\\demoBDDFramework\\src\\main\\java\\com\\assetvantage\\configFiles\\extent-config.xml"));
+		Reporter.addScreenCaptureFromPath(
+				"C:\\Users\\partha.das\\git\\BDDFrameworkForQA\\demoBDDFramework\\screenShots");
+
+		Reporter.addScenarioLog("User Name ------------> " + System.getProperty("user.name"));
+		Reporter.addScenarioLog("Time Zone ------------> " + System.getProperty("user.timezone"));
+		Reporter.addScenarioLog("Machine -------------->" + " Windows 10" + "64 Bit");
+		Reporter.addScenarioLog("Selenium ------------->" + " 3.7.0");
+		Reporter.addScenarioLog("Maven ----------------> " + "3.5.2");
+		Reporter.addScenarioLog("Java Version ---------> " + "1.8.0_151");
+		testNGCucumberRunner.finish();
+        driver.quit();
+	}
 }

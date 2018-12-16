@@ -2,8 +2,6 @@ package com.assetvantage.interfaces;
 
 import java.io.IOException;
 
-import org.testng.ITestResult;
-
 public interface InterfaceAsaService {
 
 	void takeScreenShotofCurrentpage() throws IOException;
@@ -22,16 +20,5 @@ public interface InterfaceAsaService {
 
 	void debug(String message);
 
-	public void onTestStart(ITestResult result);
-
-	public void onTestSuccess(ITestResult result);
-
-	public void onTestFailure(ITestResult result);
-
-	public void onTestSkipped(ITestResult result);
-
-	public void onStart(ITestResult result);
-
-	public void onFinish(ITestResult result);
-
+	
 }

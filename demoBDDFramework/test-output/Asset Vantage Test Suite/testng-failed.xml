@@ -1,15 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="1" configfailurepolicy="continue" guice-stage="DEVELOPMENT" name="Failed suite [Asset Vantage Test Suite]" parallel="tests">
-  <test thread-count="1" name="Login and Update Profile Test(failed)" parallel="tests">
+<suite thread-count="1" configfailurepolicy="continue" guice-stage="DEVELOPMENT" name="Failed suite [Asset Vantage Test Suite]" parallel="methods">
+  <test thread-count="1" name="Login and Update Profile Test(failed)" parallel="methods">
     <classes>
-      <class name="Demo_Framework.execution.TC_1">
+      <class name="Demo_Framework.execution.TC_2_createAnAccount">
         <methods>
-          <include name="feature" invocation-numbers="0"/>
+          <include name="setUpClass"/>
           <include name="tearDownClass"/>
+          <include name="feature" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- Demo_Framework.execution.TC_2_createAnAccount -->
+      <class name="Demo_Framework.execution.TC_3_verify_WealthRegister_Report">
+        <methods>
+          <include name="tearDownClass"/>
+          <include name="feature" invocation-numbers="0"/>
+          <include name="ifTestFails"/>
           <include name="setUpClass"/>
         </methods>
-      </class> <!-- Demo_Framework.execution.TC_1 -->
+      </class> <!-- Demo_Framework.execution.TC_3_verify_WealthRegister_Report -->
     </classes>
   </test> <!-- Login and Update Profile Test(failed) -->
 </suite> <!-- Failed suite [Asset Vantage Test Suite] -->
