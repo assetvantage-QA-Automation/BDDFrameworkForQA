@@ -1,170 +1,131 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/partha.das/git/BDDFrameworkForQA/demoBDDFramework/src/main/java/com/assetvantage/featureFile/wealthRegisterVerification.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("D:/EclipseWorkspace/demoBDDFramework/src/main/java/com/assetvantage/featureFile/logIn.feature");
 formatter.feature({
   "line": 1,
-  "name": "Verify the details with JSON which are displayed on wealth register page.",
+  "name": "Login to Asset Vantage portal",
   "description": "",
-  "id": "verify-the-details-with-json-which-are-displayed-on-wealth-register-page.",
+  "id": "login-to-asset-vantage-portal",
   "keyword": "Feature"
 });
 formatter.scenarioOutline({
   "line": 3,
-  "name": "Verify that user successfully verify the wealth register report with given JSON data",
+  "name": "Verify that user is able to login to portal",
   "description": "",
-  "id": "verify-the-details-with-json-which-are-displayed-on-wealth-register-page.;verify-that-user-successfully-verify-the-wealth-register-report-with-given-json-data",
+  "id": "login-to-asset-vantage-portal;verify-that-user-is-able-to-login-to-portal",
   "type": "scenario_outline",
   "keyword": "Scenario Outline"
 });
 formatter.step({
   "line": 5,
-  "name": "user logs into portal with \"\u003cuserName\u003e\" and \"\u003cpassword\u003e\"",
+  "name": "user is on login page",
   "keyword": "Given "
 });
 formatter.step({
   "line": 6,
-  "name": "user clicks on menu - analytics and clicks on wealth register",
+  "name": "user throws \"\u003cuserName\u003e\" and \"\u003cpassword\u003e\" and click on Login button",
   "keyword": "When "
 });
 formatter.step({
   "line": 7,
-  "name": "wealth register page is displayed",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 8,
-  "name": "user search the details by entering correct entity and date and clicked on process",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 9,
-  "name": "All Denominated Assets are displayed on page",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 10,
-  "name": "user verify the details with given JSON",
+  "name": "Asset Vantage home page is displayed",
   "keyword": "Then "
 });
 formatter.examples({
-  "line": 12,
+  "line": 9,
   "name": "",
   "description": "",
-  "id": "verify-the-details-with-json-which-are-displayed-on-wealth-register-page.;verify-that-user-successfully-verify-the-wealth-register-report-with-given-json-data;",
+  "id": "login-to-asset-vantage-portal;verify-that-user-is-able-to-login-to-portal;",
   "rows": [
     {
       "cells": [
         "userName",
         "password"
       ],
-      "line": 13,
-      "id": "verify-the-details-with-json-which-are-displayed-on-wealth-register-page.;verify-that-user-successfully-verify-the-wealth-register-report-with-given-json-data;;1"
+      "line": 10,
+      "id": "login-to-asset-vantage-portal;verify-that-user-is-able-to-login-to-portal;;1"
     },
     {
       "cells": [
         "ravi.prakash",
         "user@123"
       ],
-      "line": 14,
-      "id": "verify-the-details-with-json-which-are-displayed-on-wealth-register-page.;verify-that-user-successfully-verify-the-wealth-register-report-with-given-json-data;;2"
+      "line": 11,
+      "id": "login-to-asset-vantage-portal;verify-that-user-is-able-to-login-to-portal;;2"
     }
   ],
   "keyword": "Examples"
 });
 formatter.scenario({
-  "line": 14,
-  "name": "Verify that user successfully verify the wealth register report with given JSON data",
+  "line": 11,
+  "name": "Verify that user is able to login to portal",
   "description": "",
-  "id": "verify-the-details-with-json-which-are-displayed-on-wealth-register-page.;verify-that-user-successfully-verify-the-wealth-register-report-with-given-json-data;;2",
+  "id": "login-to-asset-vantage-portal;verify-that-user-is-able-to-login-to-portal;;2",
   "type": "scenario",
   "keyword": "Scenario Outline"
 });
 formatter.step({
   "line": 5,
-  "name": "user logs into portal with \"ravi.prakash\" and \"user@123\"",
-  "matchedColumns": [
-    0,
-    1
-  ],
+  "name": "user is on login page",
   "keyword": "Given "
 });
 formatter.step({
   "line": 6,
-  "name": "user clicks on menu - analytics and clicks on wealth register",
+  "name": "user throws \"ravi.prakash\" and \"user@123\" and click on Login button",
+  "matchedColumns": [
+    0,
+    1
+  ],
   "keyword": "When "
 });
 formatter.step({
   "line": 7,
-  "name": "wealth register page is displayed",
+  "name": "Asset Vantage home page is displayed",
   "keyword": "Then "
 });
-formatter.step({
-  "line": 8,
-  "name": "user search the details by entering correct entity and date and clicked on process",
-  "keyword": "Then "
+formatter.match({
+  "location": "loginTo_AssetVantage.gotoLoginPage()"
 });
-formatter.step({
-  "line": 9,
-  "name": "All Denominated Assets are displayed on page",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 10,
-  "name": "user verify the details with given JSON",
-  "keyword": "Then "
+formatter.result({
+  "duration": 6236186543,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
       "val": "ravi.prakash",
-      "offset": 28
+      "offset": 13
     },
     {
       "val": "user@123",
-      "offset": 47
+      "offset": 32
     }
   ],
-  "location": "wealthRegisterVerification_Assetvantage.loginToPortal(String,String)"
+  "location": "loginTo_AssetVantage.loginWithCredentials(String,String)"
 });
 formatter.result({
-  "duration": 14780106319,
+  "duration": 4820407698,
   "status": "passed"
 });
 formatter.match({
-  "location": "wealthRegisterVerification_Assetvantage.navigateToWealthRegister()"
+  "location": "loginTo_AssetVantage.verifyPageName()"
 });
 formatter.result({
-  "duration": 269305429,
+  "duration": 14221622,
   "status": "passed"
-});
-formatter.match({
-  "location": "wealthRegisterVerification_Assetvantage.verifyWealthRegisterPage()"
-});
-formatter.result({
-  "duration": 7470060,
-  "status": "passed"
-});
-formatter.match({
-  "location": "wealthRegisterVerification_Assetvantage.searchForReport()"
-});
-formatter.result({
-  "duration": 1358951443,
-  "status": "passed"
-});
-formatter.match({
-  "location": "wealthRegisterVerification_Assetvantage.detailedReportIsDisplayed()"
-});
-formatter.result({
-  "duration": 9091907724,
-  "error_message": "java.lang.IndexOutOfBoundsException: Index: 0, Size: 0\r\n\tat java.util.ArrayList.rangeCheck(Unknown Source)\r\n\tat java.util.ArrayList.get(Unknown Source)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)\r\n\tat java.lang.reflect.Method.invoke(Unknown Source)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)\r\n\tat com.sun.proxy.$Proxy21.get(Unknown Source)\r\n\tat com.assetvantage.pageObjectClass.wealthRegisterPage.expandTheReport(wealthRegisterPage.java:178)\r\n\tat com.assetvantage.StepDefination.wealthRegisterVerification_Assetvantage.detailedReportIsDisplayed(wealthRegisterVerification_Assetvantage.java:68)\r\n\tat ✽.Then All Denominated Assets are displayed on page(C:/Users/partha.das/git/BDDFrameworkForQA/demoBDDFramework/src/main/java/com/assetvantage/featureFile/wealthRegisterVerification.feature:9)\r\n",
-  "status": "failed"
-});
-formatter.match({
-  "location": "wealthRegisterVerification_Assetvantage.verifyReportWithJSON()"
-});
-formatter.result({
-  "status": "skipped"
 });
 formatter.after({
-  "duration": 346186565,
+  "duration": 81935,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 53994,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 42667,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 60791,
   "status": "passed"
 });
 });

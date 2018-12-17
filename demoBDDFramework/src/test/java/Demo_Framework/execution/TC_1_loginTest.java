@@ -1,6 +1,7 @@
 package Demo_Framework.execution;
 
 import java.io.File;
+import java.net.InetAddress;
 
 import org.apache.log4j.BasicConfigurator;
 import org.testng.annotations.AfterClass;
@@ -51,21 +52,17 @@ public class TC_1_loginTest extends browser {
 	}
 
 	@AfterClass(alwaysRun = true)
-	public void tearDownClass() throws Exception {
-		log.endTestCase(getClass().getName());
-
-		Reporter.loadXMLConfig(new File(
-				"C:\\Users\\partha.das\\git\\BDDFrameworkForQA\\demoBDDFramework\\src\\main\\java\\com\\assetvantage\\configFiles\\extent-config.xml"));
-		Reporter.addScreenCaptureFromPath(
-				"C:\\Users\\partha.das\\git\\BDDFrameworkForQA\\demoBDDFramework\\screenShots");
-
-		Reporter.addScenarioLog("User Name ------------> " + System.getProperty("user.name"));
-		Reporter.addScenarioLog("Time Zone ------------> " + System.getProperty("user.timezone"));
-		Reporter.addScenarioLog("Machine -------------->" + " Windows 10" + "64 Bit");
-		Reporter.addScenarioLog("Selenium ------------->" + " 3.7.0");
-		Reporter.addScenarioLog("Maven ----------------> " + "3.5.2");
-		Reporter.addScenarioLog("Java Version ---------> " + "1.8.0_151");
-		testNGCucumberRunner.finish();
-        driver.quit();
-	}
+    public void tearDownClass() throws Exception {
+    	log.endTestCase(getClass().getName());
+    	
+    	Reporter.loadXMLConfig(new File("C:\\Users\\partha.das\\git\\BDDFrameworkForQA\\demoBDDFramework\\src\\main\\java\\com\\assetvantage\\configFiles\\extent-config.xml"));
+    	Reporter.addScenarioLog("User Name ------------> "+ System.getProperty("user.name"));
+	    Reporter.addScenarioLog("Time Zone ------------> "+ System.getProperty("user.timezone"));
+	    Reporter.addScenarioLog("Machine -------------->"+ "Processors Identifier : "+System.getenv("PROCESSOR_IDENTIFIER")+"\n"+"Processors Arc1 : "+System.getenv("PROCESSOR_ARCHITECTURE")+"\n"+ "Processors Arc2 : "+System.getenv("PROCESSOR_ARCHITEW6432")+"\n"+ "Number of Processors : "+System.getenv("NUMBER_OF_PROCESSORS"));
+	    Reporter.addScenarioLog("Selenium ------------->"+ " 3.7.0");
+	    Reporter.addScenarioLog("IP Address ----------------> "+ InetAddress. getLocalHost());
+	    Reporter.addScenarioLog("Java Version ---------> "+ System.getProperty("java.version"));
+	    testNGCucumberRunner.finish();
+	    driver.quit();
+    }
 }

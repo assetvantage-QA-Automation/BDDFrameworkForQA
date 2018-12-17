@@ -1,14 +1,9 @@
 package Demo_Framework.execution;
 
 import java.io.File;
-import java.io.IOException;
 import java.net.InetAddress;
 
-import org.apache.commons.io.FileUtils;
 import org.apache.log4j.BasicConfigurator;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriverException;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
@@ -20,11 +15,8 @@ import com.assetvantage.interfaces.InterfaceAsaService;
 import com.cucumber.listener.Reporter;
 
 import cucumber.api.CucumberOptions;
-import cucumber.api.Scenario;
-import cucumber.api.java.After;
 import cucumber.api.testng.CucumberFeatureWrapper;
 import cucumber.api.testng.TestNGCucumberRunner;
-import gherkin.formatter.model.ScenarioOutline;
 
 @CucumberOptions(
 		features = "C:\\Users\\partha.das\\git\\BDDFrameworkForQA\\demoBDDFramework\\src\\main\\java\\com\\assetvantage\\featureFile\\wealthRegisterVerification.feature", //the path of the feature files
