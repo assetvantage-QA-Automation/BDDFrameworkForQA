@@ -1,4 +1,4 @@
-package Demo_Framework.execution;
+package Demo_Framework.TestRunner;
 
 import com.assetvantage.commonUtils.readJSON_file;
 

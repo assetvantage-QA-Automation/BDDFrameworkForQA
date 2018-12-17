@@ -1,5 +1,6 @@
 Feature: Login to Asset Vantage portal
 
+
 Scenario Outline: Verify that user is able to login to portal
 
 Given user is on login page

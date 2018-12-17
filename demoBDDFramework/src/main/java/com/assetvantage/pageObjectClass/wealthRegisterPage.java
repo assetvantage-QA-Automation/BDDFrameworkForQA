@@ -24,7 +24,7 @@ public class wealthRegisterPage extends browser {
 		PageFactory.initElements(driver, this);
 	}
 
-	@FindAll({ @FindBy(xpath = "//button[@id='btnExpandAll' and @title='Expand All']") })
+	@FindAll({ @FindBy(xpath = "//table[@class='table']//following-sibling::button[@id='expandExelId']") })
 	List<WebElement> expandAll;
 	@FindBy(xpath = "//*[@class='select2-selection__rendered' and contains(@title,'QA Aniket Patil')]")
 	WebElement entityOrgroups;
@@ -192,7 +192,7 @@ public class wealthRegisterPage extends browser {
 			double unrealizedValue = Double
 					.parseDouble(getUnrealizedGainOrLossinINR().get(i).getText().replace(",", ""));
 			double unrealizedValuePercentage = Double
-					.parseDouble(getUnrealizedGainOrLossPercentage().get(i).getText().replace(",", ""));
+					.parseDouble(getUnrealizedGainOrLossPercentage().get(i).getText().replace("%", ""));
 
 			System.out.println(productName + " " + IRR + " " + allocation + " " + purchaseValue + " " + valueOnToday
 					+ " " + unrealizedValue + " " + unrealizedValuePercentage);

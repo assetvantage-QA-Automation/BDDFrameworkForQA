@@ -10,16 +10,13 @@ public class browser extends browserConfig {
 	public static Properties prop;
 
 	static InterfaceAsaService log = new Log();
-
-	public browser() {
-
-	}
-
-	public void openBrowserandNavigate() throws Exception {
+	 
+	public void openBrowserandNavigate(String browser) throws Exception {
 		try {
 
-			log.info("Browsers are configurable, for checking purposes Selection is skipped. //browserConfig.getBrowserName()");
-			browserConfig.startBrowser("chrome");
+			log.info(
+					"Browsers are configurable, for checking purposes Selection is skipped. //browserConfig.getBrowserName()");
+			browserConfig.startBrowser(browser);
 			driver.get(getProperty.readmyFile("url"));
 
 			log.info("URL is Presented");

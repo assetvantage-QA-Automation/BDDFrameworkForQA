@@ -1,4 +1,4 @@
-package Demo_Framework.execution;
+package Demo_Framework.TestRunner;
 
 class A{
 	int a=0;

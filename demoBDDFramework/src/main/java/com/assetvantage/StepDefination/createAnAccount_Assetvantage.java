@@ -7,7 +7,6 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriverException;
-
 import com.assetvantage.baseClass.browser;
 import com.assetvantage.commonUtils.Log;
 import com.assetvantage.commonUtils.screenshotCapture;
@@ -31,10 +30,7 @@ public class createAnAccount_Assetvantage extends browser {
 
 	@Given("^user is able to login with \"(.*)\" and \"(.*)\"$")
 	public void user_is_able_to_login(String username, String password) throws Exception { // \"(.*)\"
-		browser br = new browser();
-		br.openBrowserandNavigate();
-		log.info("Login page is displayed");
-		ss.takeScreenShotofCurrentpage();
+
 		logInPage lp = new logInPage(driver);
 		lp.loginToApp(username, password);
 		log.info("Login successful");

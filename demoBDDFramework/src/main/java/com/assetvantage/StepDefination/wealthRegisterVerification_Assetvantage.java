@@ -7,7 +7,6 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriverException;
-
 import com.assetvantage.baseClass.browser;
 import com.assetvantage.commonUtils.Log;
 import com.assetvantage.commonUtils.screenshotCapture;
@@ -31,10 +30,7 @@ public class wealthRegisterVerification_Assetvantage extends browser {
 
 	@Given("^user logs into portal with \"(.*)\" and \"(.*)\"$") // \"(.*)\"
 	public void loginToPortal(String username, String password) throws Exception {
-		browser br = new browser();
-		br.openBrowserandNavigate();
-		log.info("Login page is displayed");
-		ss.takeScreenShotofCurrentpage();
+
 		logInPage lp = new logInPage(driver);
 		lp.loginToApp(username, password);
 		log.info("Login successful");
