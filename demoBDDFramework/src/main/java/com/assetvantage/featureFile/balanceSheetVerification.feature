@@ -1,5 +1,6 @@
 Feature: Verify the details with JSON which are displayed on wealth register page.
 
+@SmokeTest
 Scenario Outline: Verify that user successfully verify the balanceSheet report with given JSON data
 
 Given user is logged into portal with "<userName>" and "<password>"
@@ -11,4 +12,4 @@ Then User verify the details with given JSON "<filePath>"
 
 Examples:
   |userName             | password|  filePath|
-  |ravi.prakash         |user@123|  C:\\Users\\partha.das\\git\\BDDFrameworkForQA\\demoBDDFramework\\src\\main\\java\\com\\assetvantage\\dataFile\\balanceSheet.json|
+  |ravi.prakash         |user@123 |  C:\\Users\\partha.das\\git\\BDDFrameworkForQA\\demoBDDFramework\\src\\main\\java\\com\\assetvantage\\dataFile\\balanceSheet.json|
