@@ -4,72 +4,13 @@
   <test thread-count="1" name="Login and Update Profile Test1(failed)" parallel="methods">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="Demo_Framework.TestRunner.TC_4_verify_balanceSheet_report">
+      <class name="Demo_Framework.TestRunner.TC_1_loginTest">
         <methods>
           <include name="tearDownClass"/>
-          <include name="feature" invocation-numbers="0"/>
+          <include name="feature" invocation-numbers="1"/>
           <include name="setUpClass"/>
         </methods>
-      </class> <!-- Demo_Framework.TestRunner.TC_4_verify_balanceSheet_report -->
-      <class name="Demo_Framework.TestRunner.TC_2_createAnAccount">
-        <methods>
-          <include name="tearDownClass"/>
-          <include name="feature" invocation-numbers="0"/>
-          <include name="setUpClass"/>
-        </methods>
-      </class> <!-- Demo_Framework.TestRunner.TC_2_createAnAccount -->
+      </class> <!-- Demo_Framework.TestRunner.TC_1_loginTest -->
     </classes>
   </test> <!-- Login and Update Profile Test1(failed) -->
-  <test thread-count="1" name="Login and Update Profile Test2(failed)" parallel="methods">
-    <parameter name="browser" value="firefox"/>
-    <classes>
-      <class name="Demo_Framework.TestRunner.TC_4_verify_balanceSheet_report">
-        <methods>
-          <include name="tearDownClass"/>
-          <include name="feature" invocation-numbers="0"/>
-          <include name="setUpClass"/>
-        </methods>
-      </class> <!-- Demo_Framework.TestRunner.TC_4_verify_balanceSheet_report -->
-      <class name="Demo_Framework.TestRunner.TC_2_createAnAccount">
-        <methods>
-          <include name="tearDownClass"/>
-          <include name="feature" invocation-numbers="0"/>
-          <include name="setUpClass"/>
-        </methods>
-      </class> <!-- Demo_Framework.TestRunner.TC_2_createAnAccount -->
-      <class name="Demo_Framework.TestRunner.TC_1_loginTest">
-        <methods>
-          <include name="tearDownClass"/>
-          <include name="feature" invocation-numbers="0"/>
-          <include name="setUpClass"/>
-        </methods>
-      </class> <!-- Demo_Framework.TestRunner.TC_1_loginTest -->
-    </classes>
-  </test> <!-- Login and Update Profile Test2(failed) -->
-  <test thread-count="1" name="Login and Update Profile Test3(failed)" parallel="methods">
-    <parameter name="browser" value="IE"/>
-    <classes>
-      <class name="Demo_Framework.TestRunner.TC_4_verify_balanceSheet_report">
-        <methods>
-          <include name="tearDownClass"/>
-          <include name="feature" invocation-numbers="0"/>
-          <include name="setUpClass"/>
-        </methods>
-      </class> <!-- Demo_Framework.TestRunner.TC_4_verify_balanceSheet_report -->
-      <class name="Demo_Framework.TestRunner.TC_2_createAnAccount">
-        <methods>
-          <include name="tearDownClass"/>
-          <include name="feature" invocation-numbers="0"/>
-          <include name="setUpClass"/>
-        </methods>
-      </class> <!-- Demo_Framework.TestRunner.TC_2_createAnAccount -->
-      <class name="Demo_Framework.TestRunner.TC_1_loginTest">
-        <methods>
-          <include name="tearDownClass"/>
-          <include name="feature" invocation-numbers="0"/>
-          <include name="setUpClass"/>
-        </methods>
-      </class> <!-- Demo_Framework.TestRunner.TC_1_loginTest -->
-    </classes>
-  </test> <!-- Login and Update Profile Test3(failed) -->
 </suite> <!-- Failed suite [Asset Vantage Test Suite] -->

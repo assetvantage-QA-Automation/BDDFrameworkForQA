@@ -16,7 +16,7 @@ import cucumber.api.testng.CucumberFeatureWrapper;
 import cucumber.api.testng.TestNGCucumberRunner;
 
 @CucumberOptions(
-		features = "D:\\EclipseWorkspace\\demoBDDFramework\\src\\main\\java\\com\\assetvantage\\featureFile", //logIn.feature", //the path of the feature files
+		features = "../demoBDDFramework/src/main/java/com/assetvantage/featureFile", //logIn.feature", //the path of the feature files
 		glue={"com.assetvantage"}, //the path of the step definition files
 		plugin= {"pretty","html:test-outout", "json:json_output/cucumber.json", "junit:junit_xml/cucumber.xml","com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html"}, //to generate different types of reporting
 		monochrome = true, //display the console output in a proper readable format
