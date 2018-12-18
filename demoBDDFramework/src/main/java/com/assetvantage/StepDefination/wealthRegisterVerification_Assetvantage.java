@@ -13,7 +13,6 @@ import com.assetvantage.commonUtils.screenshotCapture;
 import com.assetvantage.interfaces.InterfaceAsaService;
 import com.assetvantage.pageObjectClass.analytics;
 import com.assetvantage.pageObjectClass.homePageCommon;
-import com.assetvantage.pageObjectClass.logInPage;
 import com.assetvantage.pageObjectClass.wealthRegisterPage;
 import com.cucumber.listener.Reporter;
 
@@ -21,23 +20,15 @@ import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
 
 public class wealthRegisterVerification_Assetvantage extends browser {
 
 	InterfaceAsaService log = new Log();
 	InterfaceAsaService ss = new screenshotCapture();
 
-	@Given("^user logs into portal with \"(.*)\" and \"(.*)\"$") // \"(.*)\"
-	public void loginToPortal(String username, String password) throws Exception {
+	
 
-		logInPage lp = new logInPage(driver);
-		lp.loginToApp(username, password);
-		log.info("Login successful");
-		ss.takeScreenShotofCurrentpage();
-	}
-
-	@When("^user clicks on menu - analytics and clicks on wealth register$")
+	@Given("^user clicks on menu - analytics and clicks on wealth register$")
 	public void navigateToWealthRegister() {
 		homePageCommon hpc = new homePageCommon(driver);
 		hpc.clickOnMenuThenClickOnAnalytics();

@@ -53,7 +53,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Dec 18, 2018 01:57:24 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Dec 19, 2018 02:08:48 AM</span>
 				</a>
 			</li>
 			<li>
@@ -141,10 +141,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='50%'><span class='strong'>1</span> feature(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> feature(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='50%'>1</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>3</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -156,10 +156,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='50%'><span class='strong'>1</span> scenario(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> scenario(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='50%'>1</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>3</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -171,10 +171,10 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='66.667%'><span class='strong'>6</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='25%'><span class='strong'>3</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='11.111%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='22.222%'>2</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='25%'>3</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='50%'>6</span> others
 				</div>
 			</div>
 		</div>
@@ -188,21 +188,21 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Verify the details with JSON which are displayed on wealth register page.</span>
-						<span class='test-time'>Dec 18, 2018 01:57:24 PM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-time'>Dec 19, 2018 02:08:48 AM</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
-<div class='scenariooutline node' test-id='2' status='pass'>
-	<span class='duration right label'>0h 0m 19s+922ms</span>
+<div class='scenariooutline node' test-id='2' status='fail'>
+	<span class='duration right label'>0h 0m 11s+454ms</span>
 	<div class='desc'>
 		<b>ScenarioOutline</b>
 		<span class="desc-text">Verify that user successfully verify the balanceSheet report with given JSON data</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='3' class='node scenario pass' status='pass'>
+		<li test-id='3' class='node scenario fail' status='fail'>
 			<div class='category-list'>
 				<span class='category label white-text'>@SmokeTest</span>
 			</div>
@@ -213,83 +213,28 @@
 			
 				<ul class='steps'>
 					<li test-id='4' class='node given pass' status='pass'><b>Given</b>
-						<span class="bdd-step-name">Given user is logged into portal with "ravi.prakash" and "user@123"</span>
+						<span class="bdd-step-name">Given user Clicks on menu - General Ledger and clicks on Balance Sheet</span>
 							<div class='pre'>passed</div>
 					</li>
-					<li test-id='5' class='node when pass' status='pass'><b>When</b>
-						<span class="bdd-step-name">When user Clicks on menu - General Ledger and clicks on Balance Sheet</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='6' class='node then pass' status='pass'><b>Then</b>
+					<li test-id='5' class='node then pass' status='pass'><b>Then</b>
 						<span class="bdd-step-name">Then Balance Sheet page is displayed</span>
 							<div class='pre'>passed</div>
 					</li>
-					<li test-id='7' class='node then pass' status='pass'><b>Then</b>
+					<li test-id='6' class='node then pass' status='pass'><b>Then</b>
 						<span class="bdd-step-name">Then user Search the details by entering correct entity and date and clicked on process</span>
 							<div class='pre'>passed</div>
 					</li>
-					<li test-id='8' class='node then pass' status='pass'><b>Then</b>
-						<span class="bdd-step-name">Then All  Equities and Liabilities are displayed on page</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='9' class='node then pass' status='pass'><b>Then</b>
-						<span class="bdd-step-name">Then User verify the details with given JSON "C:\Users\partha.das\git\BDDFrameworkForQA\demoBDDFramework\src\main\java\com\assetvantage\dataFile\balanceSheet.json"</span>
-							<div class='pre'>passed</div>
-					</li>
-				</ul>
-		</li>
-	</ul>
-</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='10'>
-					<div class='test-heading'>
-						<span class='test-name'>Create an account in Assetvantage portal</span>
-						<span class='test-time'>Dec 18, 2018 01:57:44 PM</span>
-						<span class='test-status right fail'>fail</span>
-					</div>
-					<div class='test-content hide'>
-<div class='scenariooutline node' test-id='11' status='fail'>
-	<span class='duration right label'>0h 0m 4s+73ms</span>
-	<div class='desc'>
-		<b>ScenarioOutline</b>
-		<span class="desc-text">Verify that user is able to create an account</span>
-	</div>
-	<ul class='steps'>
-		<li test-id='12' class='node scenario fail' status='fail'>
-			<div class='category-list'>
-				<span class='category label white-text'>@SmokeTest</span>
-			</div>
-			
-			<b>Scenario</b>
-			
-			<span class="bdd-step-name">Verify that user is able to create an account</span>
-				<div class='pre'>User Name ------------> partha.das</div>
-				<div class='pre'>Time Zone ------------> Asia/Calcutta</div>
-				<div class='pre'>Machine -------------->Processors Identifier : Intel64 Family 6 Model 142 Stepping 9, GenuineIntel
-Processors Arc1 --------------> : AMD64
-Processors Arc2 --------------> : null
-Number of Processors --------------> : 4</div>
-				<div class='pre'>Selenium -------------> 3.7.0</div>
-				<div class='pre'>IP Address ----------------> DESKTOP-CIM2M57/172.18.4.49</div>
-				<div class='pre'>Java Version ---------> 1.8.0_171</div>
-			
-				<ul class='steps'>
-					<li test-id='13' class='node given fail' status='fail'><b>Given</b>
-						<span class="bdd-step-name">Given user is able to login with "ravi.prakash" and "user@123"</span>
-							<div class='pre'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"id","selector":"username"}
+					<li test-id='7' class='node then fail' status='fail'><b>Then</b>
+						<span class="bdd-step-name">Then All Equities and Liabilities are displayed on page</span>
+							<div class='pre'><textarea>org.openqa.selenium.WebDriverException: unknown error: Element <button class="tbl-expand pull-left" title="Expand All" id="btnExpandAll">...</button> is not clickable at point (42, 107). Other element would receive the click: <div class="modalloader"></div>
   (Session info: chrome=71.0.3578.98)
   (Driver info: chromedriver=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'DESKTOP-CIM2M57', ip: '172.18.4.49', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.44.609538 (b655c5a60b0b54..., userDataDir: C:\Users\partha.das\AppData...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:51960}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
-Session ID: fd611a4d0c21148c653d9e3c2ecfa9d9
-*** Element info: {Using=id, value=username}
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.44.609538 (b655c5a60b0b54..., userDataDir: C:\Users\partha.das\AppData...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58151}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 0b5bbb6fcd5fb90feb33034acc600792
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -302,23 +247,99 @@ Session ID: fd611a4d0c21148c653d9e3c2ecfa9d9
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:368)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy20.sendKeys(Unknown Source)
-	at com.assetvantage.pageObjectClass.logInPage.loginToApp(logInPage.java:65)
-	at com.assetvantage.StepDefination.createAnAccount_Assetvantage.user_is_able_to_login(createAnAccount_Assetvantage.java:35)
-	at ?.Given user is able to login with "ravi.prakash" and "user@123"(createAccount.feature:6)
-</pre></div>
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at com.assetvantage.pageObjectClass.balanceSheetPage.expandTheReport(balanceSheetPage.java:146)
+	at com.assetvantage.StepDefination.balanceSheetVerification_Assetvantage.detailedReportIsDisplayed(balanceSheetVerification_Assetvantage.java:60)
+	at ?.Then All Equities and Liabilities are displayed on page(balanceSheetVerification.feature:10)
+</textarea></div>
 					</li>
-					<li test-id='14' class='node when skip' status='skip'><b>When</b>
-						<span class="bdd-step-name">When user navigates to menu- master - accounts</span>
+					<li test-id='8' class='node then skip' status='skip'><b>Then</b>
+						<span class="bdd-step-name">Then User verify the details with given JSON "C:\Users\partha.das\git\BDDFrameworkForQA\demoBDDFramework\src\main\java\com\assetvantage\dataFile\balanceSheet.json"</span>
+						<ul class='screenshots right'>
+							<li><a data-featherlight="image" href="C:\Users\partha.das\git\BDDFrameworkForQA\demoBDDFramework\target\cucumber-reports\screenshots\Verify_that_user_successfully_verify_the_balanceSheet_report_with_given_JSON_data.png"><i class='material-icons'>panorama</i></a></li>
+							<li><a data-featherlight="image" href="C:\Users\partha.das\git\BDDFrameworkForQA\demoBDDFramework\target\cucumber-reports\screenshots\Verify_that_user_successfully_verify_the_balanceSheet_report_with_given_JSON_data.png"><i class='material-icons'>panorama</i></a></li>
+							<li><a data-featherlight="image" href="C:\Users\partha.das\git\BDDFrameworkForQA\demoBDDFramework\target\cucumber-reports\screenshots\Verify_that_user_successfully_verify_the_balanceSheet_report_with_given_JSON_data.png"><i class='material-icons'>panorama</i></a></li>
+							<li><a data-featherlight="image" href="C:\Users\partha.das\git\BDDFrameworkForQA\demoBDDFramework\target\cucumber-reports\screenshots\Verify_that_user_successfully_verify_the_balanceSheet_report_with_given_JSON_data.png"><i class='material-icons'>panorama</i></a></li>
+						</ul>
 							<div class='pre'>skipped</div>
 					</li>
-					<li test-id='15' class='node then skip' status='skip'><b>Then</b>
+				</ul>
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='9'>
+					<div class='test-heading'>
+						<span class='test-name'>Create an account in Assetvantage portal</span>
+						<span class='test-time'>Dec 19, 2018 02:09:01 AM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenariooutline node' test-id='10' status='fail'>
+	<span class='duration right label'>0h 0m 0s+70ms</span>
+	<div class='desc'>
+		<b>ScenarioOutline</b>
+		<span class="desc-text">Verify that user is able to create an account</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='11' class='node scenario fail' status='fail'>
+			<div class='category-list'>
+				<span class='category label white-text'>@SmokeTest</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Verify that user is able to create an account</span>
+			
+				<ul class='steps'>
+					<li test-id='12' class='node given fail' status='fail'><b>Given</b>
+						<span class="bdd-step-name">Given user navigates to menu- master - accounts</span>
+							<div class='pre'><textarea>org.openqa.selenium.WebDriverException: unknown error: Element <a id="hamburgerslidingmenu" href="" data-toggle="hamburger" data-target="#sliding-menu">...</a> is not clickable at point (1304, 21). Other element would receive the click: <div class="modalloader"></div>
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-CIM2M57', ip: '172.18.4.49', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.44.609538 (b655c5a60b0b54..., userDataDir: C:\Users\partha.das\AppData...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58151}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 0b5bbb6fcd5fb90feb33034acc600792
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at com.assetvantage.pageObjectClass.homePageCommon.clickonMenubutton(homePageCommon.java:181)
+	at com.assetvantage.pageObjectClass.homePageCommon.clickOnMenuThenClickOnMaster(homePageCommon.java:190)
+	at com.assetvantage.StepDefination.createAnAccount_Assetvantage.user_navigates_to_menu_master_accounts(createAnAccount_Assetvantage.java:33)
+	at ?.Given user navigates to menu- master - accounts(createAccount.feature:7)
+</textarea></div>
+					</li>
+					<li test-id='13' class='node then skip' status='skip'><b>Then</b>
 						<span class="bdd-step-name">Then verify that user is able to create account</span>
 						<ul class='screenshots right'>
 							<li><a data-featherlight="image" href="C:\Users\partha.das\git\BDDFrameworkForQA\demoBDDFramework\target\cucumber-reports\screenshots\Verify_that_user_is_able_to_create_an_account.png"><i class='material-icons'>panorama</i></a></li>
@@ -329,6 +350,108 @@ Session ID: fd611a4d0c21148c653d9e3c2ecfa9d9
 							<div class='pre'>skipped</div>
 					</li>
 				</ul>
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='14'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify the details with JSON which are displayed on wealth register page.</span>
+						<span class='test-time'>Dec 19, 2018 02:09:02 AM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenario node' test-id='15' status='fail'>
+	<div class='category-list'>
+		<span class='category label white-text'>@SmokeTest</span>
+	</div>
+	<span class='duration right label'>0h 0m 0s+45ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Verify that user successfully verify the wealth register report with given JSON data</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='16' class='node given fail' status='fail'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given user clicks on menu - analytics and clicks on wealth register</span>
+				<div class='pre'><textarea>org.openqa.selenium.WebDriverException: unknown error: Element <a id="hamburgerslidingmenu" href="" data-toggle="hamburger" data-target="#sliding-menu">...</a> is not clickable at point (1304, 21). Other element would receive the click: <div class="modalloader"></div>
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-CIM2M57', ip: '172.18.4.49', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.44.609538 (b655c5a60b0b54..., userDataDir: C:\Users\partha.das\AppData...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58151}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 0b5bbb6fcd5fb90feb33034acc600792
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at com.assetvantage.pageObjectClass.homePageCommon.clickonMenubutton(homePageCommon.java:181)
+	at com.assetvantage.pageObjectClass.homePageCommon.clickOnMenuThenClickOnAnalytics(homePageCommon.java:185)
+	at com.assetvantage.StepDefination.wealthRegisterVerification_Assetvantage.navigateToWealthRegister(wealthRegisterVerification_Assetvantage.java:34)
+	at ?.Given user clicks on menu - analytics and clicks on wealth register(wealthRegisterVerification.feature:8)
+</textarea></div>
+			
+		</li>
+		<li test-id='17' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then wealth register page is displayed</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='18' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then user search the details by entering correct entity and date and clicked on process</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='19' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then All Denominated Assets are displayed on page</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='20' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then user verify the details with given JSON</span>
+			<ul class='screenshots right'>
+				<li><a data-featherlight="image" href="C:\Users\partha.das\git\BDDFrameworkForQA\demoBDDFramework\target\cucumber-reports\screenshots\Verify_that_user_successfully_verify_the_wealth_register_report_with_given_JSON_data.png"><i class='material-icons'>panorama</i></a></li>
+				<li><a data-featherlight="image" href="C:\Users\partha.das\git\BDDFrameworkForQA\demoBDDFramework\target\cucumber-reports\screenshots\Verify_that_user_successfully_verify_the_wealth_register_report_with_given_JSON_data.png"><i class='material-icons'>panorama</i></a></li>
+				<li><a data-featherlight="image" href="C:\Users\partha.das\git\BDDFrameworkForQA\demoBDDFramework\target\cucumber-reports\screenshots\Verify_that_user_successfully_verify_the_wealth_register_report_with_given_JSON_data.png"><i class='material-icons'>panorama</i></a></li>
+				<li><a data-featherlight="image" href="C:\Users\partha.das\git\BDDFrameworkForQA\demoBDDFramework\target\cucumber-reports\screenshots\Verify_that_user_successfully_verify_the_wealth_register_report_with_given_JSON_data.png"><i class='material-icons'>panorama</i></a></li>
+			</ul>
+				<div class='pre'>skipped</div>
+			
 		</li>
 	</ul>
 </div>
@@ -388,14 +511,13 @@ Session ID: fd611a4d0c21148c653d9e3c2ecfa9d9
 					<div class='category-heading'>
 						<span class='category-name'>@SmokeTest</span>
 						<span class='category-status right'>
-							<span class='label pass'>1</span>
-							<span class='label fail'>1</span>
+							<span class='label fail'>3</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
-							<span class='label red lighten-1 white-text'>Failed: 1</span>
+							
+							<span class='label red lighten-1 white-text'>Failed: 3</span>
 							
 						</div>
 					
@@ -410,13 +532,18 @@ Session ID: fd611a4d0c21148c653d9e3c2ecfa9d9
 								</thead>
 								<tbody>
 									<tr>
-										<td>Dec 18, 2018 01:57:25 PM</td>
+										<td>Dec 19, 2018 02:08:48 AM</td>
 										<td class='linked' test-id='3'>Verify the details with JSON which are displayed on wealth register page..Verify that user successfully verify the balanceSheet report with given JSON data.Verify that user successfully verify the balanceSheet report with given JSON data</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 									<tr>
-										<td>Dec 18, 2018 01:57:44 PM</td>
-										<td class='linked' test-id='12'>Create an account in Assetvantage portal.Verify that user is able to create an account.Verify that user is able to create an account</td>
+										<td>Dec 19, 2018 02:09:01 AM</td>
+										<td class='linked' test-id='11'>Create an account in Assetvantage portal.Verify that user is able to create an account.Verify that user is able to create an account</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Dec 19, 2018 02:09:02 AM</td>
+										<td class='linked' test-id='15'>Verify the details with JSON which are displayed on wealth register page..Verify that user successfully verify the wealth register report with given JSON data</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 								</tbody>
@@ -463,8 +590,8 @@ Session ID: fd611a4d0c21148c653d9e3c2ecfa9d9
 
                         <li class='exception displayed active'>
                             <div class='exception-heading'>
-                                <span class='exception-name'>org.openqa.selenium.NoSuchElementException</span>
-                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+                                <span class='exception-name'>org.openqa.selenium.WebDriverException</span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>3</span></span>
                             </div>
                             <div class='exception-content hide'>
                                 <div class='exception-tests'>
@@ -478,19 +605,17 @@ Session ID: fd611a4d0c21148c653d9e3c2ecfa9d9
                                         </thead>
                                         <tbody>
                                                     <tr>
-                                                        <td>Dec 18, 2018 01:57:44 PM</td>
-                                                        <td class='linked' test-id='13'>Create an account in Assetvantage portal.Verify that user is able to create an account.Verify that user is able to create an account.Given user is able to login with "ravi.prakash" and "user@123"</td>
-                                                        <td><pre><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"id","selector":"username"}
+                                                        <td>Dec 19, 2018 02:08:59 AM</td>
+                                                        <td class='linked' test-id='7'>Verify the details with JSON which are displayed on wealth register page..Verify that user successfully verify the balanceSheet report with given JSON data.Verify that user successfully verify the balanceSheet report with given JSON data.Then All Equities and Liabilities are displayed on page</td>
+                                                        <td><pre><textarea>org.openqa.selenium.WebDriverException: unknown error: Element <button class="tbl-expand pull-left" title="Expand All" id="btnExpandAll">...</button> is not clickable at point (42, 107). Other element would receive the click: <div class="modalloader"></div>
   (Session info: chrome=71.0.3578.98)
   (Driver info: chromedriver=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'DESKTOP-CIM2M57', ip: '172.18.4.49', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.44.609538 (b655c5a60b0b54..., userDataDir: C:\Users\partha.das\AppData...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:51960}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
-Session ID: fd611a4d0c21148c653d9e3c2ecfa9d9
-*** Element info: {Using=id, value=username}
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.44.609538 (b655c5a60b0b54..., userDataDir: C:\Users\partha.das\AppData...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58151}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 0b5bbb6fcd5fb90feb33034acc600792
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -503,17 +628,94 @@ Session ID: fd611a4d0c21148c653d9e3c2ecfa9d9
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:368)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy20.sendKeys(Unknown Source)
-	at com.assetvantage.pageObjectClass.logInPage.loginToApp(logInPage.java:65)
-	at com.assetvantage.StepDefination.createAnAccount_Assetvantage.user_is_able_to_login(createAnAccount_Assetvantage.java:35)
-	at ?.Given user is able to login with "ravi.prakash" and "user@123"(createAccount.feature:6)
-</pre></pre></td>
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at com.assetvantage.pageObjectClass.balanceSheetPage.expandTheReport(balanceSheetPage.java:146)
+	at com.assetvantage.StepDefination.balanceSheetVerification_Assetvantage.detailedReportIsDisplayed(balanceSheetVerification_Assetvantage.java:60)
+	at ?.Then All Equities and Liabilities are displayed on page(balanceSheetVerification.feature:10)
+</textarea></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Dec 19, 2018 02:09:01 AM</td>
+                                                        <td class='linked' test-id='12'>Create an account in Assetvantage portal.Verify that user is able to create an account.Verify that user is able to create an account.Given user navigates to menu- master - accounts</td>
+                                                        <td><pre><textarea>org.openqa.selenium.WebDriverException: unknown error: Element <a id="hamburgerslidingmenu" href="" data-toggle="hamburger" data-target="#sliding-menu">...</a> is not clickable at point (1304, 21). Other element would receive the click: <div class="modalloader"></div>
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-CIM2M57', ip: '172.18.4.49', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.44.609538 (b655c5a60b0b54..., userDataDir: C:\Users\partha.das\AppData...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58151}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 0b5bbb6fcd5fb90feb33034acc600792
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at com.assetvantage.pageObjectClass.homePageCommon.clickonMenubutton(homePageCommon.java:181)
+	at com.assetvantage.pageObjectClass.homePageCommon.clickOnMenuThenClickOnMaster(homePageCommon.java:190)
+	at com.assetvantage.StepDefination.createAnAccount_Assetvantage.user_navigates_to_menu_master_accounts(createAnAccount_Assetvantage.java:33)
+	at ?.Given user navigates to menu- master - accounts(createAccount.feature:7)
+</textarea></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Dec 19, 2018 02:09:02 AM</td>
+                                                        <td class='linked' test-id='16'>Verify the details with JSON which are displayed on wealth register page..Verify that user successfully verify the wealth register report with given JSON data.Given user clicks on menu - analytics and clicks on wealth register</td>
+                                                        <td><pre><textarea>org.openqa.selenium.WebDriverException: unknown error: Element <a id="hamburgerslidingmenu" href="" data-toggle="hamburger" data-target="#sliding-menu">...</a> is not clickable at point (1304, 21). Other element would receive the click: <div class="modalloader"></div>
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-CIM2M57', ip: '172.18.4.49', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.44.609538 (b655c5a60b0b54..., userDataDir: C:\Users\partha.das\AppData...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58151}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 0b5bbb6fcd5fb90feb33034acc600792
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at com.assetvantage.pageObjectClass.homePageCommon.clickonMenubutton(homePageCommon.java:181)
+	at com.assetvantage.pageObjectClass.homePageCommon.clickOnMenuThenClickOnAnalytics(homePageCommon.java:185)
+	at com.assetvantage.StepDefination.wealthRegisterVerification_Assetvantage.navigateToWealthRegister(wealthRegisterVerification_Assetvantage.java:34)
+	at ?.Given user clicks on menu - analytics and clicks on wealth register(wealthRegisterVerification.feature:8)
+</textarea></pre></td>
                                                     </tr>
                                         </tbody>
                                     </table>
@@ -539,37 +741,37 @@ Session ID: fd611a4d0c21148c653d9e3c2ecfa9d9
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Features
-					<div class='panel-lead'>2</div>
+					<div class='panel-lead'>3</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>2</div>
+					<div class='panel-lead'>3</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>9</div>
+					<div class='panel-lead'>12</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Dec 18, 2018 01:57:24 PM</div>
+					<div class='panel-lead'>Dec 19, 2018 02:08:48 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Dec 18, 2018 01:57:51 PM</div>
+			 		<div class='panel-lead'>Dec 19, 2018 02:09:04 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>26,691ms</div>
+					<div class='panel-lead'>16,373ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -586,11 +788,11 @@ Session ID: fd611a4d0c21148c653d9e3c2ecfa9d9
 						</tr>
 						<tr>
 							<td>@SmokeTest</td>
-							<td>1</td>
-							<td>1</td>
+							<td>0</td>
+							<td>3</td>
 							<td>0</td>
 							<td>
-									50%
+									0%
 							</td>
 						</tr>
 					</table>
@@ -606,31 +808,31 @@ Session ID: fd611a4d0c21148c653d9e3c2ecfa9d9
 
 		<script>
 			var statusGroup = {
-				passParent: 1,
-				failParent: 1,
+				passParent: 0,
+				failParent: 3,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 1,
+				exceptionsParent: 3,
 				
-				passChild: 1,
-				failChild: 1,
+				passChild: 0,
+				failChild: 3,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 1,
+				exceptionsChild: 3,
 				
-				passGrandChild: 6,
-				failGrandChild: 1,
+				passGrandChild: 3,
+				failGrandChild: 3,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 2,
+				skipGrandChild: 6,
 				infoGrandChild: 0,
-				exceptionsGrandChild: 3,
+				exceptionsGrandChild: 9,
 			};
 		</script>
 		

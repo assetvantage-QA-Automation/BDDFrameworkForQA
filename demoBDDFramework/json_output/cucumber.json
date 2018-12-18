@@ -10,7 +10,7 @@
         "after": [
           {
             "result": {
-              "duration": 166136,
+              "duration": 342951085,
               "status": "passed"
             },
             "match": {
@@ -19,16 +19,7 @@
           },
           {
             "result": {
-              "duration": 51729,
-              "status": "passed"
-            },
-            "match": {
-              "location": "wealthRegisterVerification_Assetvantage.ifTestFails(Scenario)"
-            }
-          },
-          {
-            "result": {
-              "duration": 66077,
+              "duration": 332584589,
               "status": "passed"
             },
             "match": {
@@ -37,11 +28,20 @@
           },
           {
             "result": {
-              "duration": 16991,
+              "duration": 385988939,
               "status": "passed"
             },
             "match": {
               "location": "balanceSheetVerification_Assetvantage.ifTestFails(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 319806482,
+              "status": "passed"
+            },
+            "match": {
+              "location": "wealthRegisterVerification_Assetvantage.ifTestFails(Scenario)"
             }
           }
         ],
@@ -50,33 +50,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5134614542,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user is logged into portal with \"ravi.prakash\" and \"user@123\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "ravi.prakash",
-                  "offset": 33
-                },
-                {
-                  "val": "user@123",
-                  "offset": 52
-                }
-              ],
-              "location": "balanceSheetVerification_Assetvantage.loginToPortal(String,String)"
-            },
-            "matchedColumns": [
-              0,
-              1
-            ],
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 216617279,
+              "duration": 304038686,
               "status": "passed"
             },
             "line": 7,
@@ -84,11 +58,11 @@
             "match": {
               "location": "balanceSheetVerification_Assetvantage.navigateToWealthRegister()"
             },
-            "keyword": "When "
+            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 8862211,
+              "duration": 14085671,
               "status": "passed"
             },
             "line": 8,
@@ -100,7 +74,7 @@
           },
           {
             "result": {
-              "duration": 10988555509,
+              "duration": 10955480895,
               "status": "passed"
             },
             "line": 9,
@@ -112,11 +86,12 @@
           },
           {
             "result": {
-              "duration": 239901209,
-              "status": "passed"
+              "duration": 93216525,
+              "error_message": "org.openqa.selenium.WebDriverException: unknown error: Element \u003cbutton class\u003d\"tbl-expand pull-left\" title\u003d\"Expand All\" id\u003d\"btnExpandAll\"\u003e...\u003c/button\u003e is not clickable at point (42, 107). Other element would receive the click: \u003cdiv class\u003d\"modalloader\"\u003e\u003c/div\u003e\n  (Session info: chrome\u003d71.0.3578.98)\n  (Driver info: chromedriver\u003d2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90),platform\u003dWindows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nBuild info: version: \u00273.14.0\u0027, revision: \u0027aacccce0\u0027, time: \u00272018-08-02T20:19:58.91Z\u0027\nSystem info: host: \u0027DESKTOP-CIM2M57\u0027, ip: \u0027172.18.4.49\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_171\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.44.609538 (b655c5a60b0b54..., userDataDir: C:\\Users\\partha.das\\AppData...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58151}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}\nSession ID: 0b5bbb6fcd5fb90feb33034acc600792\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)\r\n\tat java.lang.reflect.Method.invoke(Unknown Source)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\r\n\tat com.sun.proxy.$Proxy12.click(Unknown Source)\r\n\tat com.assetvantage.pageObjectClass.balanceSheetPage.expandTheReport(balanceSheetPage.java:146)\r\n\tat com.assetvantage.StepDefination.balanceSheetVerification_Assetvantage.detailedReportIsDisplayed(balanceSheetVerification_Assetvantage.java:60)\r\n\tat ✽.Then All Equities and Liabilities are displayed on page(balanceSheetVerification.feature:10)\r\n",
+              "status": "failed"
             },
             "line": 10,
-            "name": "All  Equities and Liabilities are displayed on page",
+            "name": "All Equities and Liabilities are displayed on page",
             "match": {
               "location": "balanceSheetVerification_Assetvantage.detailedReportIsDisplayed()"
             },
@@ -124,8 +99,7 @@
           },
           {
             "result": {
-              "duration": 3248397922,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 11,
             "name": "User verify the details with given JSON \"C:\\Users\\partha.das\\git\\BDDFrameworkForQA\\demoBDDFramework\\src\\main\\java\\com\\assetvantage\\dataFile\\balanceSheet.json\"",
@@ -139,7 +113,7 @@
               "location": "balanceSheetVerification_Assetvantage.verifyReportWithJSON(String)"
             },
             "matchedColumns": [
-              2
+              0
             ],
             "keyword": "Then "
           }
@@ -164,12 +138,12 @@
       {
         "line": 12,
         "name": "Verify that user is able to create an account",
-        "description": "Before",
+        "description": "",
         "id": "create-an-account-in-assetvantage-portal;verify-that-user-is-able-to-create-an-account;;2",
         "after": [
           {
             "result": {
-              "duration": 370312517,
+              "duration": 313500496,
               "status": "passed"
             },
             "match": {
@@ -178,16 +152,7 @@
           },
           {
             "result": {
-              "duration": 357316167,
-              "status": "passed"
-            },
-            "match": {
-              "location": "wealthRegisterVerification_Assetvantage.ifTestFails(Scenario)"
-            }
-          },
-          {
-            "result": {
-              "duration": 338160710,
+              "duration": 309188140,
               "status": "passed"
             },
             "match": {
@@ -196,11 +161,20 @@
           },
           {
             "result": {
-              "duration": 379214374,
+              "duration": 288862559,
               "status": "passed"
             },
             "match": {
               "location": "balanceSheetVerification_Assetvantage.ifTestFails(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 275168439,
+              "status": "passed"
+            },
+            "match": {
+              "location": "wealthRegisterVerification_Assetvantage.ifTestFails(Scenario)"
             }
           }
         ],
@@ -209,41 +183,16 @@
         "steps": [
           {
             "result": {
-              "duration": 4060280105,
-              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"id\",\"selector\":\"username\"}\n  (Session info: chrome\u003d71.0.3578.98)\n  (Driver info: chromedriver\u003d2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90),platform\u003dWindows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.14.0\u0027, revision: \u0027aacccce0\u0027, time: \u00272018-08-02T20:19:58.91Z\u0027\nSystem info: host: \u0027DESKTOP-CIM2M57\u0027, ip: \u0027172.18.4.49\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_171\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.44.609538 (b655c5a60b0b54..., userDataDir: C:\\Users\\partha.das\\AppData...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:51960}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}\nSession ID: fd611a4d0c21148c653d9e3c2ecfa9d9\n*** Element info: {Using\u003did, value\u003dusername}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:368)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy20.sendKeys(Unknown Source)\r\n\tat com.assetvantage.pageObjectClass.logInPage.loginToApp(logInPage.java:65)\r\n\tat com.assetvantage.StepDefination.createAnAccount_Assetvantage.user_is_able_to_login(createAnAccount_Assetvantage.java:35)\r\n\tat ✽.Given user is able to login with \"ravi.prakash\" and \"user@123\"(createAccount.feature:6)\r\n",
+              "duration": 78186144,
+              "error_message": "org.openqa.selenium.WebDriverException: unknown error: Element \u003ca id\u003d\"hamburgerslidingmenu\" href\u003d\"\" data-toggle\u003d\"hamburger\" data-target\u003d\"#sliding-menu\"\u003e...\u003c/a\u003e is not clickable at point (1304, 21). Other element would receive the click: \u003cdiv class\u003d\"modalloader\"\u003e\u003c/div\u003e\n  (Session info: chrome\u003d71.0.3578.98)\n  (Driver info: chromedriver\u003d2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90),platform\u003dWindows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nBuild info: version: \u00273.14.0\u0027, revision: \u0027aacccce0\u0027, time: \u00272018-08-02T20:19:58.91Z\u0027\nSystem info: host: \u0027DESKTOP-CIM2M57\u0027, ip: \u0027172.18.4.49\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_171\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.44.609538 (b655c5a60b0b54..., userDataDir: C:\\Users\\partha.das\\AppData...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58151}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}\nSession ID: 0b5bbb6fcd5fb90feb33034acc600792\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)\r\n\tat java.lang.reflect.Method.invoke(Unknown Source)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\r\n\tat com.sun.proxy.$Proxy12.click(Unknown Source)\r\n\tat com.assetvantage.pageObjectClass.homePageCommon.clickonMenubutton(homePageCommon.java:181)\r\n\tat com.assetvantage.pageObjectClass.homePageCommon.clickOnMenuThenClickOnMaster(homePageCommon.java:190)\r\n\tat com.assetvantage.StepDefination.createAnAccount_Assetvantage.user_navigates_to_menu_master_accounts(createAnAccount_Assetvantage.java:33)\r\n\tat ✽.Given user navigates to menu- master - accounts(createAccount.feature:7)\r\n",
               "status": "failed"
-            },
-            "line": 6,
-            "name": "user is able to login with \"ravi.prakash\" and \"user@123\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "ravi.prakash",
-                  "offset": 28
-                },
-                {
-                  "val": "user@123",
-                  "offset": 47
-                }
-              ],
-              "location": "createAnAccount_Assetvantage.user_is_able_to_login(String,String)"
-            },
-            "matchedColumns": [
-              0,
-              1
-            ],
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "skipped"
             },
             "line": 7,
             "name": "user navigates to menu- master - accounts",
             "match": {
               "location": "createAnAccount_Assetvantage.user_navigates_to_menu_master_accounts()"
             },
-            "keyword": "When "
+            "keyword": "Given "
           },
           {
             "result": {
@@ -270,5 +219,126 @@
     "id": "create-an-account-in-assetvantage-portal",
     "keyword": "Feature",
     "uri": "createAccount.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 5,
+        "name": "Verify that user successfully verify the wealth register report with given JSON data",
+        "description": "",
+        "id": "verify-the-details-with-json-which-are-displayed-on-wealth-register-page.;verify-that-user-successfully-verify-the-wealth-register-report-with-given-json-data",
+        "after": [
+          {
+            "result": {
+              "duration": 300459592,
+              "status": "passed"
+            },
+            "match": {
+              "location": "loginTo_AssetVantage.ifTestFails(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 281931676,
+              "status": "passed"
+            },
+            "match": {
+              "location": "createAnAccount_Assetvantage.ifTestFails(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 281810094,
+              "status": "passed"
+            },
+            "match": {
+              "location": "balanceSheetVerification_Assetvantage.ifTestFails(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 271612378,
+              "status": "passed"
+            },
+            "match": {
+              "location": "wealthRegisterVerification_Assetvantage.ifTestFails(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 47695696,
+              "error_message": "org.openqa.selenium.WebDriverException: unknown error: Element \u003ca id\u003d\"hamburgerslidingmenu\" href\u003d\"\" data-toggle\u003d\"hamburger\" data-target\u003d\"#sliding-menu\"\u003e...\u003c/a\u003e is not clickable at point (1304, 21). Other element would receive the click: \u003cdiv class\u003d\"modalloader\"\u003e\u003c/div\u003e\n  (Session info: chrome\u003d71.0.3578.98)\n  (Driver info: chromedriver\u003d2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90),platform\u003dWindows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nBuild info: version: \u00273.14.0\u0027, revision: \u0027aacccce0\u0027, time: \u00272018-08-02T20:19:58.91Z\u0027\nSystem info: host: \u0027DESKTOP-CIM2M57\u0027, ip: \u0027172.18.4.49\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_171\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.44.609538 (b655c5a60b0b54..., userDataDir: C:\\Users\\partha.das\\AppData...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58151}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}\nSession ID: 0b5bbb6fcd5fb90feb33034acc600792\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)\r\n\tat java.lang.reflect.Method.invoke(Unknown Source)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\r\n\tat com.sun.proxy.$Proxy12.click(Unknown Source)\r\n\tat com.assetvantage.pageObjectClass.homePageCommon.clickonMenubutton(homePageCommon.java:181)\r\n\tat com.assetvantage.pageObjectClass.homePageCommon.clickOnMenuThenClickOnAnalytics(homePageCommon.java:185)\r\n\tat com.assetvantage.StepDefination.wealthRegisterVerification_Assetvantage.navigateToWealthRegister(wealthRegisterVerification_Assetvantage.java:34)\r\n\tat ✽.Given user clicks on menu - analytics and clicks on wealth register(wealthRegisterVerification.feature:8)\r\n",
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "user clicks on menu - analytics and clicks on wealth register",
+            "match": {
+              "location": "wealthRegisterVerification_Assetvantage.navigateToWealthRegister()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "wealth register page is displayed",
+            "match": {
+              "location": "wealthRegisterVerification_Assetvantage.verifyWealthRegisterPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "user search the details by entering correct entity and date and clicked on process",
+            "match": {
+              "location": "wealthRegisterVerification_Assetvantage.searchForReport()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "All Denominated Assets are displayed on page",
+            "match": {
+              "location": "wealthRegisterVerification_Assetvantage.detailedReportIsDisplayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "user verify the details with given JSON",
+            "match": {
+              "location": "wealthRegisterVerification_Assetvantage.verifyReportWithJSON()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@SmokeTest"
+          }
+        ]
+      }
+    ],
+    "name": "Verify the details with JSON which are displayed on wealth register page.",
+    "description": "",
+    "id": "verify-the-details-with-json-which-are-displayed-on-wealth-register-page.",
+    "keyword": "Feature",
+    "uri": "wealthRegisterVerification.feature"
   }
 ]

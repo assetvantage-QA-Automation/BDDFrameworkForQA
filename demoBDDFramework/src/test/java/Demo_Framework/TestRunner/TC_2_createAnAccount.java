@@ -10,7 +10,10 @@ import org.testng.annotations.Test;
 import com.assetvantage.baseClass.browser;
 import com.assetvantage.commonUtils.Log;
 import com.assetvantage.commonUtils.cucumberReportAfterExecution;
+import com.assetvantage.commonUtils.getProperty;
 import com.assetvantage.interfaces.InterfaceAsaService;
+import com.assetvantage.pageObjectClass.logInPage;
+
 import cucumber.api.CucumberOptions;
 import cucumber.api.testng.CucumberFeatureWrapper;
 import cucumber.api.testng.TestNGCucumberRunner;
@@ -37,6 +40,10 @@ public class TC_2_createAnAccount extends browser{
     	log.startTestCase(getClass().getName());
     	browser br = new browser();
 		br.openBrowserandNavigate(browser);
+		logInPage lp = new logInPage(driver);
+		lp.loginToApp(getProperty.readmyFile("user"), getProperty.readmyFile("password"));
+		log.info("Login successful");
+		
         testNGCucumberRunner = new TestNGCucumberRunner(this.getClass());
     }
 
@@ -54,6 +61,7 @@ public class TC_2_createAnAccount extends browser{
 	@AfterClass(alwaysRun = true)
     public void tearDownClass() throws Exception {
 		log.endTestCase(getClass().getName());
+		@SuppressWarnings("unused")
 		cucumberReportAfterExecution crae = new cucumberReportAfterExecution();
 		testNGCucumberRunner.finish();
     }

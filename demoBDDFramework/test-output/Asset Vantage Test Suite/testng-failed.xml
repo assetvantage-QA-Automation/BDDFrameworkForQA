@@ -4,13 +4,13 @@
   <test thread-count="1" name="Login and Update Profile Test1(failed)" parallel="methods">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="Demo_Framework.TestRunner.TC_1_loginTest">
+      <class name="Demo_Framework.TestRunner.ExecutionWithTag">
         <methods>
           <include name="tearDownClass"/>
-          <include name="feature" invocation-numbers="1"/>
           <include name="setUpClass"/>
+          <include name="feature" invocation-numbers="0 1 2"/>
         </methods>
-      </class> <!-- Demo_Framework.TestRunner.TC_1_loginTest -->
+      </class> <!-- Demo_Framework.TestRunner.ExecutionWithTag -->
     </classes>
   </test> <!-- Login and Update Profile Test1(failed) -->
 </suite> <!-- Failed suite [Asset Vantage Test Suite] -->

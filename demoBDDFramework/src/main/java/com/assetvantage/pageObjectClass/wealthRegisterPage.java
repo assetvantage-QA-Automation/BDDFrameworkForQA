@@ -185,7 +185,7 @@ public class wealthRegisterPage extends browser {
 		int count = 0;
 		for (int i = 0; i < getAllRows().size(); i++) {
 			String productName = getProductName().get(i).getText().toString();
-			double IRR = Double.parseDouble(getIrrPercentage().get(i).getText().replace("%", ""));
+			double IRR = Double.parseDouble(getIrrPercentage().get(i).getText().replace("%,", ""));
 			double allocation = Double.parseDouble(getAllocations().get(i).getText().replace("%", ""));
 			double purchaseValue = Double.parseDouble(getPurchaseValue().get(i).getText().replace(",", ""));
 			double valueOnToday = Double.parseDouble(getValueOnToday().get(i).getText().replace(",", ""));

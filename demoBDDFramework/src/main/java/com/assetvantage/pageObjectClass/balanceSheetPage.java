@@ -8,7 +8,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import com.assetvantage.baseClass.browser;
 import com.assetvantage.commonUtils.Log;
-import com.assetvantage.commonUtils.readJSON_file;
+import com.assetvantage.commonUtils.readJSON_rnd;
 import com.assetvantage.interfaces.InterfaceAsaService;
 
 public class balanceSheetPage extends browser {
@@ -48,10 +48,6 @@ public class balanceSheetPage extends browser {
 
 	@FindAll({ @FindBy(xpath = "//tr[@role='row']") })
 	List<WebElement> allRows;
-
-	protected synchronized InterfaceAsaService getLog() {
-		return log;
-	}
 
 	protected synchronized WebElement getProcessButton() {
 		return processButton;
@@ -95,10 +91,6 @@ public class balanceSheetPage extends browser {
 
 	protected synchronized List<WebElement> getAllRows() {
 		return allRows;
-	}
-
-	protected synchronized void setLog(InterfaceAsaService log) {
-		this.log = log;
 	}
 
 	protected synchronized void setProcessButton(WebElement processButton) {
@@ -161,31 +153,31 @@ public class balanceSheetPage extends browser {
 	}
 
 	public void verifyBalanceSheetValues(String JSONpath) {
-		int counter=0;
-		for (int i=0;i<getAllRows().size();i++) {
-			String productName=getProductNames().get(i).getText().toString();
-			System.out.print(productName+ " ===================>         ");
-			
-			String valuation=getValuation().get(i).getText().replace(",","");
-			double valuationF=Double.parseDouble(valuation);
-			System.out.print(valuationF+ "  ");
-			
-			String costBasis=getCostBasis().get(i).getText().replace(",","");
-			double costBasisF=Double.parseDouble(costBasis);
-			System.out.print(costBasisF+ "  ");
-			
-			String difference=getCostBasis().get(i).getText().replace(",","");
-			double differenceF=Double.parseDouble(difference);
-			System.out.print(differenceF+ "  ");
-			
-			readJSON_file rj=new readJSON_file();
-			rj.readJson(JSONpath, counter,productName , valuationF,costBasisF, differenceF);
-			
+		int counter = 0;
+		for (int i = 0; i < getAllRows().size(); i++) {
+			String productName = getProductNames().get(i).getText().toString();
+			System.out.print(productName.trim().toUpperCase() + " ON WEB PAGE ===================>         ");
+
+			String valuation = getValuation().get(i).getText().replace(",", "");
+			double valuationF = Double.parseDouble(valuation);
+			System.out.print(valuationF + "  ");
+
+			String costBasis = getCostBasis().get(i).getText().replace(",", "");
+			double costBasisF = Double.parseDouble(costBasis);
+			System.out.print(costBasisF + "  ");
+
+			String difference = getCostBasis().get(i).getText().replace(",", "");
+			double differenceF = Double.parseDouble(difference);
+			System.out.print(differenceF + "  ");
+
+			readJSON_rnd rj = new readJSON_rnd();
+			rj.readJson(JSONpath, productName, valuationF, costBasisF, differenceF);
+
 			counter++;
-			
-			System.out.println("Verification completed for ROW NUMBER: "+counter);
+
+			System.out.println("Verification completed for ROW NUMBER: " + counter);
 			System.out.println();
-			//if(counter==2) break;
+			
 		}
 	}
 
